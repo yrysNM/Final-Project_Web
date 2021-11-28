@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap');
+
+@mixin contentImg 
+{
+	.content
+	{
+
+		margin: 0;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content:  center;
+		text-align: center;
+		
+		.gerg
+		{
+
+			.img
+			{
+				background-image: url("../../../images/slide1.jpg");
+				background-position: center center; 
+				background-repeat: no-repeat;
+				background-size: cover; 
+
+				.contentSection
+				{
+						min-height:100vh ;
+						margin-bottom: 40px;
+				}
+			}
+
+			.justText
+			{
+				width: 980px; 
+				margin: 0 auto;
+				p
+				{
+					font-family: "Assistant", sans-serif;
+				font-size: 3rem;
+				font-weight: 600;
+				padding: 0 1rem;
+				margin-bottom: 70px;
+				}
+			}
+		}
+
+		
+	}
+}

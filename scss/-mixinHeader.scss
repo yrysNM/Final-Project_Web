@@ -1,0 +1,144 @@
+@mixin headerElem
+{
+	header
+	{
+		background: $color_white;
+		position: fixed; 
+		z-index: 999;
+		width: 100vw;
+		top: 0;
+
+		.heading
+		{
+			padding-bottom: 30px;
+			width: 960px;
+			margin: 0 auto;
+
+
+			.divlogo 
+			{
+				max-width: 275px;
+				position: absolute;
+				bottom: 45px;
+				top: 20px;
+
+				a
+				{
+					text-decoration: none;
+					color: $color_white;
+					display: block;
+					line-height:  0;
+				}
+			}
+
+			.icons
+			{
+				float: right;
+				width: auto;
+
+				.cart
+				{
+					padding: 5px 0;
+					line-height: 52px;
+					a
+					{
+						font-weight: 100;
+						text-transform: uppercase;
+					}
+
+					div
+					{
+						margin: 0 5px;
+					}
+				}
+			}
+
+			.navbar
+			{
+
+				ul
+				{
+					list-style: none;
+					text-align: right;
+					clear: both;
+
+					li
+					{
+						display: inline-block;
+						a
+						{
+							font-size: 11px; 
+								font-weight: 300;
+								color: $color_text333;
+								display: block;
+								padding: 0 10px 0 10px;
+								text-transform: uppercase;
+								letter-spacing: 1px;
+						}
+
+
+						ul.submenu li 
+						{
+							background: $color_white;
+							width: 145px;
+							position: relative;
+							display: block;
+							float: none;
+
+
+							
+						}
+
+						ul.submenu li a
+						{
+							letter-spacing: 0;
+							color: $color_text777;
+							text-align: center;
+							font-size: 10px;
+							font-weight: 300; 
+						}
+					}
+
+					li.dropDown > a.andown
+					{
+						 
+						margin-left: 5px;
+					}				
+
+					li.dropDown ul.submenu
+					{
+					/* 	display: none; */
+
+						position: absolute;
+						top: 80px;
+						z-index: 25;
+						
+						line-height: 26px; 
+						padding: 10px 0;
+						margin: 0;
+
+							 box-shadow: 0 2px 5px $color_subMenuShadow;
+						    visibility: hidden;
+						    transition: 50ms 0.5ms;
+						    background: $color_white;
+					}
+
+					li.dropDown:hover ul.submenu
+					{
+						/* display: block; */
+						visibility: visible;
+    					transition: 0s;
+    					
+
+					}
+
+				}
+
+
+			}
+
+			
+		}
+
+	}
+}
