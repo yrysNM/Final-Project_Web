@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+/* Hash Map */
+* {
+  font-family: "Questrial", sans -serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  /* transition: .2s linear; */ }
+
+html {
+  font-size: 65.25%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth; }
+  html::-webkit-scrollbar {
+    width: 3px;
+    height: 3px; }
+  html::-webkit-scrollbar-track {
+    background: transparent; }
+  html::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 2rem; }
+
+body {
+  background-color: white;
+  line-height: 1.6rem; }
+
+a {
+  text-decoration: none;
+  color: black;
+  outline: 0;
+  transition: all .25s ease-in-out; }
+
+header {
+  background: white;
+  position: fixed;
+  z-index: 999;
+  width: 100vw;
+  top: 0; }
+  header .heading {
+    padding-bottom: 30px;
+    width: 960px;
+    margin: 0 auto; }
+    header .heading .divlogo {
+      max-width: 275px;
+      position: absolute;
+      bottom: 45px;
+      top: 20px; }
+      header .heading .divlogo a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        line-height: 0; }
+    header .heading .icons {
+      float: right;
+      width: auto; }
+      header .heading .icons .cart {
+        padding: 5px 0;
+        line-height: 52px; }
+        header .heading .icons .cart a {
+          font-weight: 100;
+          text-transform: uppercase; }
+        header .heading .icons .cart div {
+          margin: 0 5px; }
+    header .heading .navbar ul {
+      list-style: none;
+      text-align: right;
+      clear: both; }
+      header .heading .navbar ul li {
+        display: inline-block; }
+        header .heading .navbar ul li a {
+          font-size: 11px;
+          font-weight: 300;
+          color: #333333;
+          display: block;
+          padding: 0 10px 0 10px;
+          text-transform: uppercase;
+          letter-spacing: 1px; }
+        header .heading .navbar ul li ul.submenu li {
+          background: white;
+          width: 145px;
+          position: relative;
+          display: block;
+          float: none; }
+        header .heading .navbar ul li ul.submenu li a {
+          letter-spacing: 0;
+          color: #777777;
+          text-align: center;
+          font-size: 10px;
+          font-weight: 300; }
+      header .heading .navbar ul li.dropDown > a.andown {
+        margin-left: 5px; }
+      header .heading .navbar ul li.dropDown ul.submenu {
+        /* 	display: none; */
+        position: absolute;
+        top: 80px;
+        z-index: 25;
+        line-height: 26px;
+        padding: 10px 0;
+        margin: 0;
+        box-shadow: 0 2px 5px #d4d4d4;
+        visibility: hidden;
+        transition: 50ms 0.5ms;
+        background: white; }
+      header .heading .navbar ul li.dropDown:hover ul.submenu {
+        /* display: block; */
+        visibility: visible;
+        transition: 0s; }

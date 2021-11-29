@@ -4,7 +4,16 @@ $color_black: rgb(0, 0, 0);
 $color_text333: hsl(0, 0%, 20%);
 $color_text777: rgb(119, 119, 119);
 
+
 $color_subMenuShadow: hsl(0, 0%, 83%);
 $color_bgfooter: hsl(0, 0%, 78%);
+$color_bgBtn: rgb(109, 109, 109);
 $color_borderInput: rgba(109, 109, 109, 0.3);
 $color_buttonFooter: rgb(172, 172, 172);
+
+/* Hash Map */
+
+$borders: (
+	'border': 1px solid hsl(0, 0%, 92%)
+);
+

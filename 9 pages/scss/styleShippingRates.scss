@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
+
 @import "../../scss/-useColors.scss";
 @import "../../scss/-mixinHeader.scss";
-@import "mixins/-mixinAboutContent.scss";
-@import "../../scss/-mixinFooter.scss";
 
 *
 {
@@ -61,7 +60,3 @@ a
 
 
 @include headerElem;
-
-@include contentElem;
-
-@include footerElem;

@@ -1,0 +1,247 @@
+@mixin contactElem
+{
+	.content
+	{
+		width: 980px;
+		margin: 0 auto;
+		margin-top: 12.5rem;
+		font-size: 1.25rem;
+		color: $color_text333;
+		.ContactandAbou
+		{
+			font-weight: 100; 
+			letter-spacing: 0.5px;
+			font-size: 11px;
+			margin-bottom: 20px 10px;
+
+			a
+			{
+				margin-bottom: 20px; 
+				text-transform: uppercase;
+
+			}
+		}
+
+		.headText
+		{
+			margin-top: 20px; 
+			h1
+			{
+				font-weight: 400; 
+				color: lighten($color_black, 10%);
+				margin-bottom: 5px;
+			}
+
+			.line
+			{
+				width: 980px;
+				margin: 0 auto;
+				height: 0.5px;
+				background-color: lighten($color_text777, 30%);
+				margin-bottom: 20px;
+			}
+		}
+
+		.row
+		{
+			display: flex;
+			flex-direction: column;
+
+			.map
+			{
+				width: 100%;
+				margin: 0 auto;
+				height: 400px;
+
+			}
+
+			.boxs
+			{
+				margin-top: 40px;
+				display: flex;
+				flex-flow: row nowrap;
+
+			}
+
+			.information
+			{
+				width: 30%;
+				height: 300px;
+				display: flex;
+				flex-direction: column;
+				/* justify-content: center; */
+				margin: 0;
+				margin-right: 5px;
+				border: map-get($borders, 'border');
+				line-height: 20px;
+				
+
+				p:nth-child(1)
+				{
+
+					font-size: 1.3rem;
+					font-weight:  600;
+					margin: 20px 0 15px 20px;
+					text-transform: uppercase;
+				
+				}
+
+				.line
+				{
+					width: 100%;
+					height: 0.3px;
+					background-color: hsl(0, 0%, 92%);
+				}
+
+				.dataInfo
+				{
+					margin-left: 20px;
+					margin-top: 10px;
+
+					.number
+					{
+						color: $color_black;
+						text-decoration: underline;
+					}
+
+					p
+					{
+						display: flex;
+						flex-direction: column;
+						color: $color_text777;
+					}
+
+					.SotreHoursText
+					{
+						a{
+
+							color: $color_text777;
+							font-weight: 700; 
+						}
+						margin-top: 30px;
+						margin-bottom: 10px;
+						text-decoration: underline;
+
+					}
+
+					.date 
+					{
+						span
+						{
+							text-transform: uppercase;
+							letter-spacing: 2px;
+						}
+						text-transform: uppercase;
+						letter-spacing: 1px;
+					}
+				}
+
+			}
+
+			.contactBox
+			{
+				width: 70%;
+			
+				display: flex;
+				flex-direction: column;
+				margin: 0;
+				margin-left: 5px;
+				border: map-get($borders, 'border');
+
+				.formSec
+				{
+				
+					.headText 
+					{
+						font-size: 1.3rem;
+						font-weight: 600; 
+						margin: 20px 0 15px 20px;
+						text-transform: uppercase;
+					}
+
+					.line
+					{
+						width: 100%;
+						height: 0.3px;
+						background-color: hsl(0, 0%, 92%);
+					}
+
+					.inputBox
+					{
+						margin-top: 10px;
+						.contactHeadText
+						{
+							font-size: 1.2rem; 
+							font-weight: 400; 
+							text-transform: uppercase;
+							margin-left: 20px; 
+							margin-bottom: 5px;
+							color: $color_text777;
+						}
+
+						.inSp
+						{
+							display: flex;
+							flex-direction: row;
+							align-items: center;
+							justify-content: center;
+							margin: 5px 20px 20px 20px;
+							border: map-get($borders, 'border');
+							border-color: darken(hsl(0, 0%, 92%), 50%);
+							input
+							{
+								width: 100%;
+								height: 36px;
+			
+								text-indent: 10px;
+								margin-left: 5px;
+							}
+
+							span
+							{
+								margin-left: 5px;
+								font-size: 26px;
+							}
+						}
+
+
+						textarea 
+						{
+							margin: 5px 20px 20px 20px;
+							text-indent: 10px;
+							border: map-get($borders, 'border');
+							border-color: darken(hsl(0, 0%, 92%), 50%);
+						}
+
+					}
+
+
+					.btn
+					{
+						border: map-get($borders, 'border');
+						border-color: darken(hsl(0, 0%, 92%), 30%);
+					    background: $color_bgBtn;
+					    text-transform: uppercase;
+					    font-size: 11px;
+					   	padding: 15px;
+					   	margin-left: 20px;
+					   	margin-bottom: 10px;
+					    border-radius: 0;
+					    color: $color_white;
+						transition: all .3s linear;
+					    &:hover
+					    {
+					    	background-color: darken($color_bgBtn, 40%);
+					    }
+					}
+
+				}
+
+
+			}
+
+
+		}
+
+	}
+}

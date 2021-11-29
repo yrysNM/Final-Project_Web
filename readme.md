@@ -4,7 +4,7 @@ Final project is a team project. In one team can be 1-4 students. You can do fin
 
  1)Number of web pages must be at least 10.
 
- 2)Web pages must have at least one tag <i>, <hr>, <textarea>, <ul>, <ol>(not in all web pages).
+ 2)Web pages must have at least one tag "<i>, <hr>, <textarea>, <ul>, <ol>"(not in all web pages).
 
  3)Push your final project in github repository. This task for each team member. 
 

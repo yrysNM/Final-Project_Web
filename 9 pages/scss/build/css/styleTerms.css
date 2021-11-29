@@ -117,13 +117,13 @@ header {
   margin: 0 auto;
   margin-top: 12.5rem;
   font-size: 1.25rem;
-  color: #919191; }
-  .content .HomeandAbout {
+  color: #333333; }
+  .content .HomeandTerms {
     font-weight: 100;
     letter-spacing: 0.5px;
     font-size: 11px;
     margin-bottom: 20px 10px; }
-    .content .HomeandAbout a {
+    .content .HomeandTerms a {
       margin-bottom: 20px;
       text-transform: uppercase; }
   .content .headText {
@@ -135,49 +135,9 @@ header {
     .content .headText .line {
       width: 980px;
       margin: 0 auto;
-      background-color: #c4c4c4;
       height: 0.5px;
+      background-color: #c4c4c4;
       margin-bottom: 20px; }
-  .content .textAbout p:nth-child(1) {
-    text-transform: none;
-    margin-bottom: 20px; }
-  .content .textAbout p:nth-child(2) {
-    text-transform: none;
-    margin-bottom: 20px; }
-  .content .Hisimg {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .content .Hisimg img {
-      margin: 20px 0;
-      width: 480px;
-      height: 320px;
-      object-fit: cover; }
-  .content .textAbout2 {
-    margin-bottom: 20px; }
-    .content .textAbout2 p {
-      text-transform: none; }
-  .content .imgDiv2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap; }
-    .content .imgDiv2 img {
-      margin: 0 20px;
-      width: 480px;
-      height: 320px;
-      object-fit: cover; }
-  .content .textAbout3 {
-    margin-top: 20px; }
-    .content .textAbout3 p:nth-child(1) {
-      text-transform: none;
-      margin-bottom: 10px; }
-    .content .textAbout3 p:nth-child(2) {
-      text-transform: none;
-      margin-bottom: 10px; }
-    .content .textAbout3 p:nth-child(3) {
-      text-transform: none;
-      margin-bottom: 100px; }
 
 footer {
   font-size: 1.5rem;
