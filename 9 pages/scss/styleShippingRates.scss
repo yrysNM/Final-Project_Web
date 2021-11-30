@@ -3,6 +3,8 @@
 
 @import "../../scss/-useColors.scss";
 @import "../../scss/-mixinHeader.scss";
+@import "mixins/-mixinShippingContent.scss";
+@import "../../scss/-mixinFooter.scss";
 
 *
 {
@@ -60,3 +62,7 @@ a
 
 
 @include headerElem;
+
+@include shpippingRatesElem;
+
+@include footerElem;

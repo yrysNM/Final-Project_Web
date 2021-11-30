@@ -1,0 +1,114 @@
+@mixin shpippingRatesElem
+{
+	.content
+	{
+		width: 980px;
+		margin: 0 auto; 
+		margin-top: 12.5rem;
+		font-size: 1.25rem;
+		color: $color_text333; 
+
+		.ShipingandHome
+		{
+			font-weight: 100;
+			letter-spacing: 0.5px; 
+			font-size: 11px;
+			margin-bottom: 20px 10px;
+
+			a
+			{
+				margin-bottom:  20px; 
+				text-transform: uppercase;
+			}
+		}
+
+		.headText
+		{
+			margin-top: 20px;
+
+			h1
+			{
+				font-weight: 400;
+				color: lighten($color_black, 10%);
+				margin-bottom: 5px;
+			}
+
+			.line
+			{
+				width: 980px;
+				margin: 0 auto;
+				height: 0.5px;
+				background-color: lighten($color_text777, 30%);
+				margin-bottom: 20px;
+			}
+		}
+
+		.boxandInfo
+		{
+			h3
+			{
+				font-size: 20px;
+				font-weight: 600;
+				margin-bottom: 10px;
+
+			}
+
+			.tableizer-table
+			{
+				width: 100%;
+				margin-bottom: 10px;
+			}
+
+			ul
+			{
+				margin: 30px 0;
+
+				li
+				{
+					color: $color_text777;
+					list-style: disc inside;
+					line-height: 20px;
+				}
+			}
+
+			.conBottomTexts
+			{
+				margin-bottom: 3rem;
+				line-height: 20px;
+				h3
+				{
+					font-weight: 100; 
+					font-size: 2rem;
+					margin-bottom: 10px;
+				}
+
+				p
+				{
+					color: $color_text777;
+				}
+
+				
+
+			}
+
+			.conBottomTexts2
+			{
+				.lastp
+				{
+					color: $color_text777;
+					line-height: 20px;
+					text-transform: none;
+					margin:10px 0;
+					span
+					{
+						font-weight: 700; 
+						color: darken($color_text777, 20%);
+					}
+				}
+
+				margin-bottom: 10rem;
+			}
+
+		}
+	}
+}
