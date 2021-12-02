@@ -63,6 +63,7 @@ header {
         padding: 5px 0;
         line-height: 52px; }
         header .heading .icons .cart a {
+          /* 	text-decoration: none !Important; */
           font-weight: 100;
           text-transform: uppercase; }
         header .heading .icons .cart div {
@@ -120,10 +121,11 @@ header {
   color: #333333; }
   .content .ContactandAbou {
     font-weight: 100;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
     font-size: 11px;
     margin-bottom: 20px 10px; }
     .content .ContactandAbou a {
+      color: #777777;
       margin-bottom: 20px;
       text-transform: uppercase; }
   .content .headText {

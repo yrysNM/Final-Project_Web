@@ -82,7 +82,7 @@
 						{
 							background: $color_white;
 							width: 145px;
-							position: relative !Important;
+							position: relative;
 							display: block;
 							float: none;
 
@@ -93,7 +93,7 @@
 						ul.submenu li a
 						{
 							letter-spacing: 0;
-							color: $color_text777 !Important;
+							color: $color_text777;
 							text-align: center;
 							font-size: 10px;
 							font-weight: 300; 
@@ -110,8 +110,8 @@
 					{
 					/* 	display: none; */
 
-						position: absolute !Important;
-						top: 80px !Important;
+						position: absolute;
+						top: 80px;
 						z-index: 25;
 						
 						line-height: 26px; 
