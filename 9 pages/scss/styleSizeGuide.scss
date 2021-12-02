@@ -3,8 +3,7 @@
 
 @import "../../scss/-useColors.scss";
 @import "../../scss/-mixinHeader.scss";
-@import "mixins/-mixinTermsContent.scss";
-@import "../../scss/-mixinFooter.scss";
+
 
 
 *
@@ -50,20 +49,16 @@ body
 {
 	 background-color: $color_white;
 	 line-height: 1.6rem;
-	 color: red;
+
 }
 
 a
 {
-	text-decoration: none; 
-	color: $color_black;
+	text-decoration: (none !Important); 
+	color: ($color_black !Important);
 	outline: 0;
 	transition: all .25s ease-in-out; 
 }
 
+
 @include headerElem;
-
-@include termsElem;
-
-
-@include footerElem;

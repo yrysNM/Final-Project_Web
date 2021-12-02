@@ -138,6 +138,21 @@ header {
       height: 0.5px;
       background-color: #c4c4c4;
       margin-bottom: 20px; }
+  .content .contentText {
+    color: #777777;
+    line-height: 20px; }
+    .content .contentText p {
+      font-size: 1.25rem;
+      text-transform: none;
+      margin-bottom: 2px; }
+    .content .contentText .paragrath1 {
+      margin-top: 40px; }
+      .content .contentText .paragrath1 span {
+        text-transform: uppercase;
+        font-size: 1.35rem;
+        font-weight: 600; }
+    .content .contentText .paragraths {
+      margin-bottom: 135px; }
 
 footer {
   font-size: 1.5rem;
