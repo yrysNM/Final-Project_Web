@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+/* Hash Map */
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Outfit&family=Zen+Kurenaido&display=swap");
 * {
@@ -23,7 +24,7 @@ html {
   html::-webkit-scrollbar-track {
     background: transparent; }
   html::-webkit-scrollbar-thumb {
-    background: white;
+    background: black;
     border-radius: 2rem; }
 
 body {
@@ -62,6 +63,7 @@ header {
         padding: 5px 0;
         line-height: 52px; }
         header .heading .icons .cart a {
+          /* 	text-decoration: none !Important; */
           font-weight: 100;
           text-transform: uppercase; }
         header .heading .icons .cart div {

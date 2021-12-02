@@ -3,7 +3,7 @@
 
 @import "../../scss/-useColors.scss";
 @import "../../scss/-mixinHeader.scss";
-
+@import "mixins/-mixinSizeGuideContent.scss";
 
 
 *
@@ -40,7 +40,7 @@ html
 
 	&::-webkit-scrollbar-thumb
 	{
-		background: $color_white;
+		background: $color_black;
 		border-radius: 2rem;
 	}
 }
@@ -54,11 +54,18 @@ body
 
 a
 {
-	text-decoration: (none !Important); 
-	color: ($color_black !Important);
+	text-decoration: (none !important); 
+	color: ($color_black !important);
 	outline: 0;
 	transition: all .25s ease-in-out; 
 }
 
+.navbar
+{
+	display: (block !important);
+}
+
 
 @include headerElem;
+
+@include sizeGuideContentElem;

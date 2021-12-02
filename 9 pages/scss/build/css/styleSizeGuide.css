@@ -22,7 +22,7 @@ html {
   html::-webkit-scrollbar-track {
     background: transparent; }
   html::-webkit-scrollbar-thumb {
-    background: white;
+    background: black;
     border-radius: 2rem; }
 
 body {
@@ -31,9 +31,12 @@ body {
 
 a {
   text-decoration: none !important;
-  color: black;
+  color: black !important;
   outline: 0;
   transition: all .25s ease-in-out; }
+
+.navbar {
+  display: block !important; }
 
 header {
   background: white;
@@ -62,6 +65,7 @@ header {
         padding: 5px 0;
         line-height: 52px; }
         header .heading .icons .cart a {
+          /* 	text-decoration: none !Important; */
           font-weight: 100;
           text-transform: uppercase; }
         header .heading .icons .cart div {
@@ -96,7 +100,7 @@ header {
         margin-left: 5px; }
       header .heading .navbar ul li.dropDown ul.submenu {
         /* 	display: none; */
-        position: absolute !important;
+        position: absolute;
         top: 80px;
         z-index: 25;
         line-height: 26px;
@@ -111,8 +115,37 @@ header {
         visibility: visible;
         transition: 0s; }
 
-
-.navbar
-{
-  display: block !important;
-}
+.content {
+  width: 980px;
+  margin: 0 auto;
+  margin-top: 12.5rem;
+  font-size: 1.25rem;
+  color: #333333; }
+  .content .SizeandHome {
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 11px;
+    margin-bottom: 20px 10px; }
+    .content .SizeandHome a {
+      color: #777777;
+      margin-bottom: 20px;
+      text-transform: uppercase; }
+  .content .headText {
+    margin-top: 20px; }
+    .content .headText h1 {
+      font-weight: 400;
+      color: #1a1a1a;
+      margin-bottom: 5px; }
+    .content .headText .line {
+      width: 980px;
+      margin: 0 auto;
+      height: 0.5px;
+      background-color: #c4c4c4;
+      margin-bottom: 20px; }
+  .content .btns {
+    display: flex;
+    overflow: auto;
+    float: right;
+    position: relative;
+    right: 30px;
+    top: 40px; }

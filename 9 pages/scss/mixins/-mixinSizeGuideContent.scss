@@ -1,0 +1,56 @@
+@mixin sizeGuideContentElem 
+{
+	.content
+	{
+		width: 980px;
+		margin: 0 auto; 
+		margin-top: 12.5rem;
+		font-size: 1.25rem;
+		color: $color_text333; 
+
+		.SizeandHome
+		{
+			font-weight: 100;
+			letter-spacing: 1px; 
+			font-size: 11px;
+			margin-bottom: 20px 10px;
+			a
+			{
+				color: $color_text777;
+				margin-bottom: 20px;
+				text-transform: uppercase;
+			}
+		}
+
+		.headText
+		{
+			margin-top: 20px;
+
+			h1
+			{
+				font-weight: 400;
+				color: lighten($color_black, 10%);
+				margin-bottom: 5px;
+			}
+
+			.line
+			{
+				width: 980px;
+				margin: 0 auto;
+				height: 0.5px;
+				background-color: lighten($color_text777, 30%);
+				margin-bottom: 20px;
+			}
+		}
+
+		.btns
+		{
+			display: flex;
+			overflow: auto; 
+			float: right;
+			position: relative;
+			right: 30px;
+			top:  40px;
+		}
+	}
+}
