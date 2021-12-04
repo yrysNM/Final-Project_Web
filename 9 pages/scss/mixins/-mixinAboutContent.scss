@@ -1,14 +1,16 @@
+@import "-mixinHeadTextContent.scss";
+
 @mixin contentElem
 {
 	.content
 	{
 		width: 980px;
 		margin: 0 auto;
-		margin-top: 12.5rem;
+		margin-top: 14.5rem;
 		font-size: 1.25rem;
 		color: lighten($color_text777, 10%);
 
-		.HomeandAbout
+		/* .HomeandAbout
 		{
 			font-weight: 100;
 			letter-spacing: 1px; 
@@ -22,7 +24,9 @@
 				text-transform: uppercase;
 
 			}
-		}
+		} */
+
+		@include headText;
 
 		.headText
 		{

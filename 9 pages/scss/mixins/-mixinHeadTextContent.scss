@@ -1,0 +1,26 @@
+@mixin headText
+{
+	.HomeandPageName
+	{
+
+			font-weight: 100; 
+			letter-spacing: 1px;
+			font-size: 11px;
+			margin-bottom: 20px 10px;
+
+			a
+			{
+				color: $color_text777;
+				margin-bottom: 20px; 
+				text-transform: uppercase;
+
+			}
+			span 
+			{
+				color: $color_text777;
+				margin-bottom: 20px; 
+				text-transform: uppercase;
+			}
+		
+	}
+}

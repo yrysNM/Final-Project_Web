@@ -1,13 +1,15 @@
+@import "-mixinHeadTextContent.scss";
+
 @mixin contactElem
 {
 	.content
 	{
 		width: 980px;
 		margin: 0 auto;
-		margin-top: 12.5rem;
+		margin-top: 14.5rem;
 		font-size: 1.25rem;
 		color: $color_text333;
-		.ContactandAbou
+		/* .ContactandAbou
 		{
 			font-weight: 100; 
 			letter-spacing: 1px;
@@ -21,7 +23,9 @@
 				text-transform: uppercase;
 
 			}
-		}
+		} */
+
+		@include headText;
 
 		.headText
 		{

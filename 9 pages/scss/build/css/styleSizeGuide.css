@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 /* Hash Map */
+@import url("https://fonts.googleapis.com/css2?family=Outfit&family=Zen+Kurenaido&display=swap");
 * {
   font-family: "Questrial", sans -serif;
   margin: 0;
@@ -10,6 +11,14 @@
   text-decoration: none;
   text-transform: capitalize;
   /* transition: .2s linear; */ }
+  *::-webkit-scrollbar {
+    width: 3px;
+    height: 3px; }
+  *::-webkit-scrollbar-track {
+    background: #e0e0e0; }
+  *::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 2rem; }
 
 html {
   font-size: 65.25%;
@@ -22,7 +31,7 @@ html {
   html::-webkit-scrollbar-track {
     background: transparent; }
   html::-webkit-scrollbar-thumb {
-    background: black;
+    background-color: black;
     border-radius: 2rem; }
 
 body {
@@ -31,7 +40,7 @@ body {
 
 a {
   text-decoration: none !important;
-  color: black !important;
+  color: black;
   outline: 0;
   transition: all .25s ease-in-out; }
 
@@ -118,15 +127,19 @@ header {
 .content {
   width: 980px;
   margin: 0 auto;
-  margin-top: 12.5rem;
+  margin-top: 14.5rem;
   font-size: 1.25rem;
   color: #333333; }
-  .content .SizeandHome {
+  .content .HomeandPageName {
     font-weight: 100;
     letter-spacing: 1px;
     font-size: 11px;
     margin-bottom: 20px 10px; }
-    .content .SizeandHome a {
+    .content .HomeandPageName a {
+      color: #777777;
+      margin-bottom: 20px;
+      text-transform: uppercase; }
+    .content .HomeandPageName span {
       color: #777777;
       margin-bottom: 20px;
       text-transform: uppercase; }
@@ -142,10 +155,122 @@ header {
       height: 0.5px;
       background-color: #c4c4c4;
       margin-bottom: 20px; }
-  .content .btns {
-    display: flex;
-    overflow: auto;
-    float: right;
+  .content .pos_btns {
     position: relative;
-    right: 30px;
-    top: 40px; }
+    left: 230px;
+    top: -10.8rem; }
+    .content .pos_btns .btns {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      /* 	left: 230px;
+			top: 13rem; */
+      overflow: hidden;
+      max-width: calc(100% - 230px); }
+      .content .pos_btns .btns h3 {
+        font-size: 1.35rem;
+        margin-bottom: 10px; }
+      .content .pos_btns .btns .listButt {
+        display: flex;
+        overflow: auto;
+        width: 100%;
+        white-space: nowrap; }
+        .content .pos_btns .btns .listButt button {
+          font-size: 14px;
+          padding: 7px 20px !important;
+          border-radius: 4px;
+          border-color: #bdbdbd;
+          margin-right: 20px;
+          margin-bottom: 5px; }
+  .content .tablesIfo h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #1a1a1a;
+    margin: 5px 0;
+    margin-left: 5px; }
+  .content .tablesIfo table {
+    color: #777777;
+    /* &::-webkit-scrollbar-thumb
+					{
+						background-color: $color_white;
+						border-radius: 2rem;
+					} */ }
+    .content .tablesIfo table thead > tr > th {
+      vertical-align: bottom;
+      border-bottom: 2px solid white; }
+    .content .tablesIfo table tbody tr th {
+      font-weight: 100;
+      border-bottom: 2px solid white; }
+    .content .tablesIfo table tbody tr td {
+      border-bottom: 2px solid white; }
+
+footer {
+  font-size: 1.5rem;
+  color: #333333; }
+  footer .linedata {
+    background-color: #c7c7c7;
+    margin-top: 20px;
+    height: 70px;
+    display: flex;
+    flow-flow: row wrap;
+    justify-content: space-around;
+    align-items: center; }
+    footer .linedata .email {
+      display: flex;
+      align-items: center;
+      margin-left: 10px; }
+      footer .linedata .email i {
+        font-size: 2.5rem;
+        margin-right: 10px; }
+    footer .linedata .join {
+      display: flex;
+      align-items: center; }
+      footer .linedata .join .emailInput {
+        width: 350px;
+        border: 0.3px solid rgba(109, 109, 109, 0.3);
+        color: #777777;
+        text-transform: uppercase;
+        font-size: 11px;
+        background: 0 0;
+        height: 36px;
+        line-height: 34px;
+        margin: 0;
+        max-width: 100%;
+        text-indent: 10px;
+        outline: 0;
+        min-height: 32px; }
+      footer .linedata .join .smallButton {
+        height: 36px;
+        border: 0.3px solid rgba(109, 109, 109, 0.3);
+        margin-left: 0;
+        line-height: initial;
+        background: #acacac;
+        text-transform: uppercase;
+        font-size: 11px;
+        float: left;
+        width: 115px;
+        display: inline-block;
+        border-radius: 0;
+        transition: all 0.3s linear; }
+        footer .linedata .join .smallButton:hover {
+          background: black;
+          color: white; }
+    footer .linedata .connect {
+      display: flex;
+      align-items: center; }
+      footer .linedata .connect a {
+        margin: 0 10px; }
+  footer .links {
+    color: #333333;
+    font-family: "Outfit", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 40px; }
+    footer .links ul li {
+      margin: 0 20px;
+      list-style: none;
+      display: inline-block; }
+      footer .links ul li a {
+        color: #333333; }

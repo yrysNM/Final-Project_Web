@@ -4,7 +4,7 @@
 @import "../../scss/-useColors.scss";
 @import "../../scss/-mixinHeader.scss";
 @import "mixins/-mixinSizeGuideContent.scss";
-
+@import "../../scss/-mixinFooter.scss";
 
 *
 {
@@ -17,7 +17,22 @@
 	text-decoration: none;
 	text-transform: capitalize;
 	/* transition: .2s linear; */
+	&::-webkit-scrollbar 
+	{
+		width: 3px;
+		height: 3px;
+	}
 
+	&::-webkit-scrollbar-track 
+	{
+		background: $color_scroll;
+	}
+
+	&::-webkit-scrollbar-thumb
+	{
+		background-color: $color_black;
+		border-radius: 2rem;
+	}
 }
 
 html
@@ -40,7 +55,7 @@ html
 
 	&::-webkit-scrollbar-thumb
 	{
-		background: $color_black;
+		background-color: $color_black;
 		border-radius: 2rem;
 	}
 }
@@ -55,7 +70,7 @@ body
 a
 {
 	text-decoration: (none !important); 
-	color: ($color_black !important);
+	color: $color_black;
 	outline: 0;
 	transition: all .25s ease-in-out; 
 }
@@ -69,3 +84,5 @@ a
 @include headerElem;
 
 @include sizeGuideContentElem;
+
+@include footerElem;

@@ -116,15 +116,34 @@ header {
 .content {
   width: 980px;
   margin: 0 auto;
-  margin-top: 12.5rem;
+  margin-top: 14.5rem;
   font-size: 1.25rem;
-  color: #919191; }
-  .content .HomeandAbout {
+  color: #919191;
+  /* .HomeandAbout
+		{
+			font-weight: 100;
+			letter-spacing: 1px; 
+			font-size: 11px;
+			margin-bottom: 20px 10px;
+
+			a
+			{
+				color: $color_text777;
+				margin-bottom: 20px;
+				text-transform: uppercase;
+
+			}
+		} */ }
+  .content .HomeandPageName {
     font-weight: 100;
     letter-spacing: 1px;
     font-size: 11px;
     margin-bottom: 20px 10px; }
-    .content .HomeandAbout a {
+    .content .HomeandPageName a {
+      color: #777777;
+      margin-bottom: 20px;
+      text-transform: uppercase; }
+    .content .HomeandPageName span {
       color: #777777;
       margin-bottom: 20px;
       text-transform: uppercase; }
