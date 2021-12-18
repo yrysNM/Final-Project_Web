@@ -169,38 +169,48 @@ header {
           padding-left: 5px;
           -webkit-appearance: none;
           background: url("https://cdn.shopify.com/s/files/1/1618/4925/t/29/assets/select-arrow.png?v=11259594172122509499") right no-repeat; }
-        .content .dataAllClothing .slides .leftBox .infoSearch .text1 {
-          display: flex; }
-          .content .dataAllClothing .slides .leftBox .infoSearch .text1 p {
-            text-transform: uppercase;
-            font-weight: 600; }
-          .content .dataAllClothing .slides .leftBox .infoSearch .text1 span {
-            font-size: 12px;
-            text-transform: uppercase;
-            padding-left: 10px; }
-        .content .dataAllClothing .slides .leftBox .infoSearch .line {
-          width: 100%;
-          margin: 0 auto;
-          height: 0.5px;
-          background-color: #c4c4c4;
-          margin-bottom: 5px; }
-        .content .dataAllClothing .slides .leftBox .infoSearch .listInfo ol {
-          list-style: none; }
-          .content .dataAllClothing .slides .leftBox .infoSearch .listInfo ol li {
-            color: #777777;
-            line-height: 20px;
-            font-size: 12px; }
-            .content .dataAllClothing .slides .leftBox .infoSearch .listInfo ol li a {
-              color: #777777; }
-            .content .dataAllClothing .slides .leftBox .infoSearch .listInfo ol li .showStyle {
-              font-weight: 900;
+        .content .dataAllClothing .slides .leftBox .infoSearch {
+          /* .text2
+						{
+							padding-top: 20px; 
+						} */ }
+          .content .dataAllClothing .slides .leftBox .infoSearch .text1 {
+            display: flex; }
+            .content .dataAllClothing .slides .leftBox .infoSearch .text1 p {
+              text-transform: uppercase;
+              font-weight: 600; }
+            .content .dataAllClothing .slides .leftBox .infoSearch .text1 span {
+              font-size: 12px;
+              text-transform: uppercase;
+              padding-left: 10px; }
+            .content .dataAllClothing .slides .leftBox .infoSearch .text1 .clear {
+              transition: all 1s ease-in-out; }
+              .content .dataAllClothing .slides .leftBox .infoSearch .text1 .clear:hover {
+                text-decoration: underline; }
+          .content .dataAllClothing .slides .leftBox .infoSearch .line {
+            width: 100%;
+            margin: 0 auto;
+            height: 0.5px;
+            background-color: #c4c4c4;
+            margin-bottom: 5px; }
+          .content .dataAllClothing .slides .leftBox .infoSearch .listInfo ol {
+            list-style: none; }
+            .content .dataAllClothing .slides .leftBox .infoSearch .listInfo ol li {
               color: black;
-              border: 1px solid black;
-              padding: 2px 3px; }
-            .content .dataAllClothing .slides .leftBox .infoSearch .listInfo ol li .hideStyle {
-              font-weight: 400;
-              color: #777777;
-              border: none; }
+              line-height: 20px;
+              font-size: 12px; }
+              .content .dataAllClothing .slides .leftBox .infoSearch .listInfo ol li a {
+                color: black; }
+              .content .dataAllClothing .slides .leftBox .infoSearch .listInfo ol li .showStyle {
+                font-weight: 900;
+                color: black;
+                border: 1px solid black;
+                padding: 2px 3px; }
+              .content .dataAllClothing .slides .leftBox .infoSearch .listInfo ol li .hideStyle {
+                font-weight: 400;
+                color: black;
+                border: none;
+                border-color: none; }
       .content .dataAllClothing .slides .rightBox {
         width: 80%;
         text-align: center;

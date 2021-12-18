@@ -103,6 +103,15 @@
 								padding-left: 10px;
 							}
 
+							.clear
+							{
+								transition: all 1s ease-in-out;
+								&:hover
+								{
+									text-decoration: underline;
+								}
+							}
+
 						}
 
 							.line
@@ -122,12 +131,12 @@
 								list-style: none;
 								li 
 								{
-									color: $color_text777;
+									color: darken($color_text777, 90%);
 									line-height: 20px;
 									font-size: 12px;
 									a
 									{
-										color: $color_text777;
+											color: darken($color_text777, 90%);
 									}
 									.showStyle
 									{
@@ -140,8 +149,9 @@
 									.hideStyle
 									{
 										font-weight: 400;
-										color: $color_text777;
+										color: darken($color_text777, 90%);
 										border: none;
+										border-color: none;
 
 									}
 
@@ -149,6 +159,11 @@
 							}
 
 						}
+
+						/* .text2
+						{
+							padding-top: 20px; 
+						} */
 					}
 
 				}

@@ -4,6 +4,7 @@ window.addEventListener("DOMContentLoaded",() => {
 
 	const listData = document.querySelector("ol"),
 				datas = listData.querySelectorAll("li"),
+				 boxs = document.querySelectorAll(".box1"),
 				tagA = document.querySelectorAll("#tagA");
 
 
