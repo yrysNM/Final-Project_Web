@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 /* Hash Map */
+@import url("https://fonts.googleapis.com/css2?family=Outfit&family=Zen+Kurenaido&display=swap");
 * {
   font-family: "Questrial", sans -serif;
   margin: 0;
@@ -229,6 +230,24 @@ header {
           .content .dataAllClothing .slides .rightBox .boxesImg .box1 .imgSize {
             /* width: 32%; */
             position: relative; }
+            .content .dataAllClothing .slides .rightBox .boxesImg .box1 .imgSize .icoSold {
+              position: relative;
+              top: -28rem;
+              left: -0.5rem;
+              height: 22px;
+              width: 70px;
+              z-index: 100;
+              background-color: black;
+              box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+              .content .dataAllClothing .slides .rightBox .boxesImg .box1 .imgSize .icoSold .icon {
+                position: absolute;
+                text-align: center;
+                color: white;
+                line-height: 12px;
+                text-transform: uppercase;
+                padding: 5px 8px;
+                font-weight: 700;
+                font-size: 11px; }
             .content .dataAllClothing .slides .rightBox .boxesImg .box1 .imgSize img {
               /* position: relative; */
               width: 100%; }
@@ -259,3 +278,74 @@ header {
               margin-bottom: 1em; }
             .content .dataAllClothing .slides .rightBox .boxesImg .box1 .boxText .price .productPrice {
               font-weight: 700; }
+
+footer {
+  font-size: 1.5rem;
+  color: #333333; }
+  footer .linedata {
+    background-color: #c7c7c7;
+    margin-top: 20px;
+    height: 70px;
+    display: flex;
+    flow-flow: row wrap;
+    justify-content: space-around;
+    align-items: center; }
+    footer .linedata .email {
+      display: flex;
+      align-items: center;
+      margin-left: 10px; }
+      footer .linedata .email i {
+        font-size: 2.5rem;
+        margin-right: 10px; }
+    footer .linedata .join {
+      display: flex;
+      align-items: center; }
+      footer .linedata .join .emailInput {
+        width: 350px;
+        border: 0.3px solid rgba(109, 109, 109, 0.3);
+        color: #777777;
+        text-transform: uppercase;
+        font-size: 11px;
+        background: 0 0;
+        height: 36px;
+        line-height: 34px;
+        margin: 0;
+        max-width: 100%;
+        text-indent: 10px;
+        outline: 0;
+        min-height: 32px; }
+      footer .linedata .join .smallButton {
+        height: 36px;
+        border: 0.3px solid rgba(109, 109, 109, 0.3);
+        margin-left: 0;
+        line-height: initial;
+        background: #acacac;
+        text-transform: uppercase;
+        font-size: 11px;
+        float: left;
+        width: 115px;
+        display: inline-block;
+        border-radius: 0;
+        transition: all 0.3s linear; }
+        footer .linedata .join .smallButton:hover {
+          background: black;
+          color: white; }
+    footer .linedata .connect {
+      display: flex;
+      align-items: center; }
+      footer .linedata .connect a {
+        margin: 0 10px; }
+  footer .links {
+    color: #333333;
+    font-family: "Outfit", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 40px; }
+    footer .links ul li {
+      margin: 0 20px;
+      list-style: none;
+      display: inline-block; }
+      footer .links ul li a {
+        color: #333333; }

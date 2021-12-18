@@ -1,11 +1,10 @@
 window.addEventListener("DOMContentLoaded", () => {
 
 	const boxs = document.querySelectorAll(".box1"),
-		//	listChangeCoats = document.querySelector("[data-handle = 'coats']"),
-		//	listChangeJakets = document.querySelector("[data-handle = 'jakets']"),
 			listBtnChanges = document.querySelectorAll("#li"),
 			tagA = document.querySelectorAll("#tagA"),
-			clearAllElemnts = document.querySelectorAll('[data-clear = "clearAll"]');
+			clearAllElemnts = document.querySelectorAll('[data-clear = "clearAll"]'),
+			listBtnDes = document.querySelectorAll("#des");
 		
 
 
@@ -13,10 +12,9 @@ window.addEventListener("DOMContentLoaded", () => {
 		arrBoxs: [],
 		objBoxs: {},
 		arrListData: [],
-		//objListBtn: {},
 		changeobjBoxs: {},
-		//changeobjHide:{},
-		changeobjShow: {}
+		changeobjShow: {},
+		arrListDesData: []
 	}
 
 
@@ -29,6 +27,26 @@ window.addEventListener("DOMContentLoaded", () => {
 	};
 
 
+	const changeDesBoxs = () => {
+		listBtnDes.forEach((item, i) => {
+			metaData.arrListDesData[i] = item.dataset.designers;
+
+			/* item.addEventListener("click", () => {
+				boxs.forEach((listBoxs, j) => {
+					
+					if(metaData.arrBoxs[j].classList[2] == metaData.arrListDesData[i] && tagA[i].classList.contains()) {
+						metaData.objBoxs[j].style.display = 'block';
+							metaData.changeobjBoxs[i] = metaData.objBoxs[i];
+					}else {
+							metaData.objBoxs[j].style.display = 'none';
+
+					}
+
+				}) 
+			}); */
+		})
+	};
+
 
 	const changeBoxs = () => {
 
@@ -40,14 +58,14 @@ window.addEventListener("DOMContentLoaded", () => {
 
 				listBtnChanges.forEach((item, j )=> {
 					 metaData.arrListData[j] = item.dataset.handle;
-					// metaData.objListBtn[j] = item;
-					metaData.changeobjShow[j] = tagA[j]
+					metaData.changeobjShow[j] = tagA[j];
+
 
 					item.addEventListener("click", () =>  {
 						
 						boxs.forEach((listBoxs, i) => {
 							
-						//	metaData.objBoxs[i].style.display = "block";
+
 						
 
 								if(metaData.arrBoxs[i].classList[1] == metaData.arrListData[j] && 
@@ -56,7 +74,7 @@ window.addEventListener("DOMContentLoaded", () => {
 									metaData.objBoxs[i].style.display = "block";
 									metaData.changeobjBoxs[i] = metaData.objBoxs[i];
 										metaData.changeobjShow[j] = tagA[j]
-									//	metaData.changeobjHide[i] = getComputedStyle(metaData.objBoxs[i]).display;
+								
 
 								}
 
@@ -66,7 +84,7 @@ window.addEventListener("DOMContentLoaded", () => {
 								 	
 											metaData.changeobjBoxs[i].style.display = "block";
 											metaData.changeobjShow[j] = tagA[j]
-										//	metaData.changeobjHide[i] = getComputedStyle(metaData.changeobjBoxs[i]).display;
+									
 									} 
 
 
@@ -82,7 +100,7 @@ window.addEventListener("DOMContentLoaded", () => {
 									
 
 											metaData.changeobjBoxs[i].style.display = "none";
-											//metaData.changeobjHide[i] = getComputedStyle(metaData.changeobjBoxs[i]).display;
+										
 										
 
 										} 
@@ -141,8 +159,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
 
-changeBoxs();
-funcClearAll();
+	changeBoxs();
+	funcClearAll();
+	changeDesBoxs();
 
 
 });

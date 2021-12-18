@@ -4,6 +4,7 @@
 @import "../../../scss/-useColors.scss";
 @import "../../../scss/-mixinHeader.scss";
 @import "mixins/-mixinMensContent.scss";
+@import "../../../scss/-mixinFooter.scss";
 
 *
 {
@@ -61,3 +62,5 @@ a
 @include headerElem;
 
 @include mensElem;
+
+@include footerElem;
