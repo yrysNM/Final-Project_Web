@@ -4,7 +4,7 @@ Final project is a team project. In one team can be 1-4 students. You can do fin
 
  1)Number of web pages must be at least 10. ❎ 1 MORE PAGE 
 
- 2)Web pages must have at least one tag "<i>, <"hr">, <textarea>, <"ul">, <ol>"(not in all web pages). ✅
+ 2)Web pages must have at least one tag "<"i">, <"hr">, <"textarea">, <"ul">, <"ol">"(not in all web pages). ✅
 
  3)Push your final project in github repository. This task for each team member. ✅
 
@@ -24,7 +24,7 @@ Final project is a team project. In one team can be 1-4 students. You can do fin
 
 
 ## Бызде уже тен жартысы дайын тек  mobile adaptable and 1 page null то есть 1 страница мен   adaptable жок так мен 
-## max-width: 991px and max-width: 778px точно емес размер но style.scss корсендер болады path("...\Atelier New York\scss\style.scss")
+## max-width: 991px and max-width: 778px точно емес размер но style.scss корсендер болады path("...\Atelier New York\scss\style.scss") ышынде бар
 
 
 
