@@ -64,3 +64,135 @@ a
 @include contentImg;
 
 @include footerElem; 
+
+
+/* addapdate 📲📲 */
+
+@media(max-width: 991px) {
+	
+	html
+	{
+		font-size: 60%;
+	}
+
+	header 
+	{
+		.heading
+		{
+			width: 768px;
+			margin: 0 auto;
+			
+		}
+	}
+
+	.content 
+	{
+		.gerg
+		{
+			.justText
+			{
+				width: 768px;
+				margin: 0 auto;
+			}
+		}
+	}
+
+	footer
+	{
+		font-size: 1rem;
+		.email
+		{
+			i {
+				font-size: 1.5rem;
+			}
+		}
+
+
+	}
+}
+
+
+@media(max-width: 768px) {
+
+	header 
+	{
+		.heading
+		{
+			width: 425px;
+			margin: 0 auto;
+			padding-bottom: 50px;
+
+			.navbar
+			{
+				position: relative;
+				top: 35px;
+
+				ul
+				{
+					li
+					{
+						a 
+						{
+							font-size: 1rem;
+							padding: 0 3px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.content 
+	{
+		.gerg
+		{
+			.justText
+			{
+				width: 425px;
+				margin: 0 auto;
+				p
+				{
+					font-size: 2rem;
+				}
+			}
+		}
+	}
+
+
+	footer
+	{
+		.linedata
+		{
+			.join
+			{
+				.emailInput
+				{
+					width: 250px;
+					font-size: 1rem;
+				}
+
+				.smallButton
+				{
+					width: 100px;
+					font-size: 1rem;
+				}
+			}	
+		}
+
+		.links
+		{
+			width: 425px;
+			margin: 0 auto;
+			ul li
+			{
+				display: block;
+				text-align: center;
+				margin: 20px 0;
+				
+				padding-bottom: 20px; 
+				border-bottom: 1px solid lighten($color_black, 90%);
+			}
+		}
+	}
+
+}
