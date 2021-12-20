@@ -3,20 +3,27 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Shipping Rates</title>
+	<title>Account/Register</title>
 
 	<link rel = "icon" href = "https://cdn.shopify.com/s/files/1/1618/4925/t/29/assets/favicon.png?v=8025241575976003150" />
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-	<link href = "scss/build/css/styleShippingRates.css" rel ="stylesheet" />
+	<link href = "scss/build/css/styleLoginRegister.css" rel ="stylesheet" />
+
+	<link href = "https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel = "stylesheet" />
+
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+	<script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+
 </head>
 <body>
 	<header>
 		<div class = "heading">
 			<div class= "divlogo">
 				<a href = "#" class = "logo">
-					<img src = "../images/if-logo.png" alt = "logo" width= "100px"/>
+					<img src = "../../images/if-logo.png" alt = "logo" width= "100px"/>
 
 				</a>
 			</div>
@@ -25,8 +32,8 @@
 
 			<div class= "icons">
 				<div class = "cart">
-					<a href = "LoginRegister/LoginRegister.html">Login/</a>
-					<a href = "LoginRegister/LoginRegister.html">Register</a>
+					<a href = "#">Login/</a>
+					<a href = "#">Register</a>
 
 					<div class ="fa fa-search"></div>
 					<div class = "fa fa-shopping-cart"></div>
@@ -47,7 +54,7 @@
 
 						<ul class="submenu">
           
-				       <!--    <li><a href="/collections/men">All Men's</a> -->
+				          <!-- <li><a href="/collections/men">All Men's</a> -->
 				            
 				            
 				          </li>
@@ -96,7 +103,7 @@
 
 						<ul class="submenu">
           
-				         <!--  <li><a href="/collections/women">All Women's</a> -->
+				       <!--    <li><a href="/collections/women">All Women's</a> -->
 				            
 				            
 				          </li>
@@ -156,7 +163,7 @@
 
 						<ul class="submenu">
           
-				         <!--  <li><a href="/collections/accessories">All Accessories</a> -->
+				       <!--    <li><a href="/collections/accessories">All Accessories</a> -->
 				            
 				            
 				          </li>
@@ -218,108 +225,84 @@
 	</header>
 
 
-	<div class ="content">
+
+	<div class = "content" id = "app">
+
 		<div class = "HomeandPageName">
-			<a href = "../index.html">Home/</a><span>Shipping Rates</span>
+			<a href = "../../index.html">Home/</a><span>Login/Register</span>
 		</div>
 
-
 		<div class = "headText">
-			<h1>Shipping Rates & Imformation</h1>
+			<h1 class = "text-4xl">Login~Register</h1>
 			<div class = "line"></div>
 		</div>
 
-		<div class = "boxandInfo">
-			<h3>Shipping Costs:</h3>
+		<!-- {{message}} -->
 
-			<table class="tableizer-table">
-				<thead>
-					<tr>
-						<th style="text-align: left;">DESTINATION</th>
-						<th style="text-align: left;">SERVICE</th>
-						<th style="text-align: left;">COST</th>
-						<th style="text-align: left;">DELIVERY TIMES</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>Continental US</td>
-						<td>Standard</td>
-						<td>$20.00</td>
-						<td>1-5 business days</td>
-					</tr>
-					<tr>
-						<td>&nbsp;</td>
-						<td>2 Day</td>
-						<td>$40.00</td>
-						<td>2 business days</td>
-					</tr>
-					<tr>
-						<td>&nbsp;</td>
-						<td>Next Day</td>
-						<td>$75.00</td>
-						<td>1 business day</td>
-					</tr>
-					<tr>
-						<td>Alaska and Hawaii</td>
-						<td>2 Day</td>
-						<td>$40.00</td>
-						<td>2 business days</td>
-					</tr>
-					<tr>
-						<td>&nbsp;</td>
-						<td>Next Day</td>
-						<td>$75.00</td>
-						<td>1 business day</td>
-					</tr>
-					<tr>
-						<td>Canada</td>
-						<td>International</td>
-						<td>$65.00</td>
-						<td>1-5 business days</td>
-					</tr>
-					<tr>
-						<td>Rest of World</td>
-						<td>International</td>
-						<td>$80.00</td>
-						<td>7-10 business days</td>
-					</tr>
-				</tbody>
-			</table>
 
-			
+		<div class = "boxs">
+			<div class = "leftBox">
+				<div class = "conText">Login</div>
 
-			<ul>
-				<li>Domestic orders placed Monday through Friday by 12pm EST (excluding holidays) are shipped the same day.</li>
-				<li>Orders placed after 12pm EST or holidays are shipped the next business day.</li>
-				<li>Orders placed Saturday and Sunday will ship out the next business day (excluding holidays).</li>
-				<li>Sales tax is only applicable to merchandise shipped to a New York address.</li>
-			</ul>
+				<form class = "formSec">
+					<div class = "sec1">
+						<div class ="textEmail">Email</div>
+						<input type = "email" placeholder="" >
+					</div>
 
-			<div class = "conBottomTexts">
-				<h3>Tracking your order:</h3>
-				<p>Upon completion of your order, you will receive an email confirmation outlining the details of your order and a link that will direct you to updated tracking information.</p>
+					<div class = "sec1">
+						<div class ="textEmail">Password</div>
+						<input type = "password" placeholder="" >
+					</div>
+				</form>
+					
+					<button class = "btnSing">Sign in</button>
+		
 			</div>
 
-			<div class = "conBottomTexts2">
-				<h3>International shipping:</h3>
-				<p class = "lastp"><span>PLEASE NOTE</span> for International Customers only: We are required by the shipping carrier to provide a phone number, so they may contact you to arrange the delivery and for customs purposes. You can enter a phone number at checkout or in your account information under the Edit Addresses section.
-				</p>
-				<p class = "lastp" >
-				Regardless of the service that is used, you may be responsible for import duties and taxes on your international order. In addition, some orders may experience customs delays. Unfortunately, we have no control over these charges or delays and cannot predict what they may be.
-				</p>
+			<div class = "rightBox">
+				<div class = "conText">Create Account</div>
 
-				<p class = "lastp" >
-				We suggest that you contact your local customs office for additional information.
-				</p>
-				<p class = "lastp">
-				Please note transit times above are provided estimates by the carrier service and are not necessarily guaranteed.</p>
+				<form class = "formSec">
+					<div class = "sec1">
+						<div class ="textEmail">First Name</div>
+						<input type = "text" id = "firstName" placeholder="" >
+					</div>
+
+					<div class = "sec1">
+						<div class ="textEmail">Last Name</div>
+						<input type = "text" id = "secondName" placeholder="" >
+					</div>
+
+					<div class = "sec1">
+						<div class ="textEmail">Email</div>
+						<input type = "email" id = "email" placeholder="" >
+
+							<span class = "pwd-formatEmail">
+								Please enter the correct email address.
+							</span>
+					</div>
+
+					<div class = "sec1">
+						<div class ="textEmail">Password</div>
+						<input type = "password"  id = "password" placeholder="" >
+						          <span class="pwd-format">
+					                    8-15 AlphaNumeric Characters
+					              </span>
+					</div>
+				</form>
+
+				<button id = "singUp" class = "btnSing">Create</button>
 			</div>
 		</div>
+
+		<div id = "data-user">
+			<data-user></data-user>
+		</div>
+
 	</div>
 
-
-	<footer>
+	<footer class = "mt-56">
 			<div class = "linedata">
 				<div class = "email">
 					<i class = "fa fa-envelope"></i>
@@ -345,17 +328,17 @@
 			 <div class = "links">
 			 	<ul id="footer-menu">
 		      
-			      <li><a href="SizeGuide.html" title="">Size Guide</a></li>
+			      <li><a href="../SizeGuide.html" title="">Size Guide</a></li>
 			      
-			      <li><a href="Shipping_rates.html" title="">Shipping Rates</a></li>
+			      <li><a href="../Shipping_rates.html" title="">Shipping Rates</a></li>
 			      
 			      <li><a href= "#" title="">Return Policy</a></li>
 			      
-			      <li><a href="About.html" title="">About</a></li>
+			      <li><a href="../About.html" title="">About</a></li>
 			      
-			      <li><a href="Contact.html" title="">Contact</a></li>
+			      <li><a href="../Contact.html" title="">Contact</a></li>
 			      
-			      <li><a href="Terms.html" title="">Terms</a></li>
+			      <li><a href="../Terms.html" title="">Terms</a></li>
 			      
 			      <li><a href="#" title="">Privacy Policy</a></li>
 		      
@@ -363,6 +346,15 @@
 			 </div>
 	</footer>
 
+	<script type="text/javascript" src = "js/scriptLogin.js"></script>
 
+<!-- 	<script> test vue js
+		var app = new Vue({
+			el: "#app",
+			data: {
+				message: "Hello World!"
+			}
+		})
+	</script> -->
 </body>
 </html>

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+
+@import "../../../scss/-useColors.scss";
+@import "../../../scss/-mixinHeader.scss";
+@import "mixins/-mixinLoginRegister.scss";
+@import "../../../scss/-mixinFooter.scss";
+
+*
+{
+	font-family: "Questrial", sans -serif;
+	margin: 0;
+	padding:  0;
+	box-sizing: border-box;
+	outline: none;
+	border:none;
+	text-decoration: none;
+	text-transform: capitalize;
+	/* transition: .2s linear; */
+
+}
+
+html
+{
+	font-size: 65.25%;
+	overflow-x: hidden;
+	scroll-padding-top: 9rem;
+	scroll-behavior: smooth;
+
+	&::-webkit-scrollbar 
+	{
+		width: 3px;
+		height: 3px;
+	}
+
+	&::-webkit-scrollbar-track 
+	{
+		background: transparent;
+	}
+
+	&::-webkit-scrollbar-thumb
+	{
+		background: $color_black;
+		border-radius: 2rem;
+	}
+}
+
+body
+{
+	 background-color: $color_white;
+	 line-height: 1.6rem;
+
+}
+
+a
+{
+	text-decoration: none; 
+	color: $color_black;
+	outline: 0;
+	transition: all .25s ease-in-out; 
+}
+
+@include headerElem;
+
+@include loginRegElem;
+
+@include footerElem;
