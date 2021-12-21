@@ -3,18 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Men's</title>
+	<title>Shoes</title>
 
 	<link rel = "icon" href = "https://cdn.shopify.com/s/files/1/1618/4925/t/29/assets/favicon.png?v=8025241575976003150" />
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-	<link href = "scss/build/css/styleMen.css" rel ="stylesheet" type = "text/css"/>
+	<link href = "scss/build/css/styleShoes.css" rel ="stylesheet" />
 
-	<!-- <link href = "https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel = "stylesheet" /> -->
+	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.min.js"></script>
 </head>
 <body>	
 	<header>
@@ -52,12 +51,12 @@
 
 						<ul class="submenu">
           
-				          <li><a href="#">All Men's</a>
+				          <li><a href="/collections/men">All Men's</a>
 				            
 				            
 				          </li>
 				          
-				          <li><a href="#coats">Coats</a>
+				          <li><a href="/collections/mens-coats">Coats</a>
 				            
 				            
 				          </li>
@@ -232,18 +231,18 @@
 
 	<div class = "content">
 		<div class = "HomeandPageName">
-			<a href = "../../index.html">Home/</a><span>Men's</span>
+			<a href = "../../index.html">Home/</a><span>Shoes</span>
 		</div>
 
 		<div class = "headText">
-			<h1>Men's</h1>
+			<h1>Shoes</h1>
 			<div class = "line"></div>
 		</div>
 
 		<div class = "dataAllClothing">
 
 				<div class = "headContentText">
-					<p>Shop Men's Avant Garde, High End Designer Clothing By Yohji Yamamoto, Paul Harnden & Many More…</p>
+					<p>Shop Avant Garde Handmade Designer Shoes By Guidi, M.A+, Paul Harnden & Many More</p>
 				</div>
 
 			<div class = "slides">
@@ -268,37 +267,18 @@
 
 					<div class = "infoSearch">
 						<div class = "text1">
-							<p>Men</p> <span data-clear = "clearAll" class = "no-underline hover:underline ... clear">Clear All</span>
+							<p>Designers</p> <span data-clear = "clearAll">Clear All</span>
 						</div>	
 						
 						<div class = "line"></div>
 
 						<div class = "listInfo">
 							<ol>
-								<li data-handle = "coats" id = "li"><a href = "#" id = "tagA" name = "coats" class = "hideStyle ">Coats</a></li>
-								<li data-handle = "jakets" id = "li"><a href = "#" id = "tagA" class = "hideStyle ">Jakets</a></li>
-								<li data-handle = "knitwear" id = "li"><a href = "#" id = "tagA" class = "hideStyle ">Knitwear</a></li>
-								<li data-handle = "shirts" id = "li"><a href = "#" id = "tagA" class = "hideStyle ">Shirts</a></li>
-								<li data-handle = "tops" id = "li"><a href = "#" id = "tagA" class = "hideStyle ">Tops</a></li>
-							</ol>
+								<li data-handle = "coats"><a href = "#" id = "tagA">Comme Des Garcons Homme Plus</a></li>
+								<li data-handle = "jakets"><a href = "#" id = "tagA">Guidi</a></li>
+							
 						</div>
 
-					<div class = "text1 mt-8" style = "margin-top: 20px">
-						<p>DESIGNERS</p> <span data-clear = "clearAll" class = "clear">Clear All </span>
-					</div>
-
-					<div class = "line"></div>
-
-						<div class  = "listInfo">
-							<ol>
-								<li data-designers = "archivio" id = "des"><a href = "#" id = "tagA" class = "hideStyle ">Archivio J.M Ribot</a></li>
-								<li data-designers = "casey" id = "des"><a href = "#" id = "tagA" class = "hideStyle ">Casey Casey</a></li>
-								<li data-designers = "yrys" id = "des"><a href = "#" id = "tagA" class = "hideStyle ">Yrys_N.M</a></li>
-								<li data-designers = "akbota" id = "des"><a href = "#" id = "tagA" class = "hideStyle ">Akbota</a></li>
-								<li data-designers = "nurzhan" id = "des"><a href = "#" id = "tagA" class = "hideStyle ">Nurzhan</a></li>
-
-							</ol>
-						</div>
 
 					</div>
 
@@ -308,239 +288,267 @@
 					<div class = "boxesImg" id = "app">
 
 						<!-- {{ show }} -->
-						<!-- <div id = "searchData"> -->
-							<div class = "box1 knitwear">
+						<div id = "searchData">
+							<div class = "box1 coats">
 
 								<div class  = "imgSize" data-parent = "imgs">
-									<img src = "images/large1.jpg" alt = "img" id = "firstImg" /> 
+									<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/DJ7952-001_248219951_D_9Y_1X1_18feaa37-b18e-4568-b069-e5a35d75f5d2.png?v=1637179627" alt = "img" id = "firstImg" /> 
 
-									<div class = "hidden  hover:opacity-100">
-										<img src = "images/large2.jpg" alt = "img" id = "hiddenImg" />	
+									<div class = "hidden">
+										<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/DJ7952-001_248219951_D_9Z_1X1_5ba43a9f-1a2e-48ab-8c08-f53838f85bcc.png?v=1637179627" alt = "img" id = "hiddenImg" />	
 									</div>
 								</div>	
 
 								<div class = "boxText">
-									<p>Akbota</p>
-									<h3>akbota Painted Slipwear The Baker Trouser</h3>
+									<p>COMME DES GARCONS HOMME PLUS</p>
+									<h3>Comme des Garçons x Nike Air Foamposite One Black</h3>
 									
 									<div class = "price">
-										<div class = "productPrice">$905.00</div>
+										<div class = "productPrice">$520.00</div>
 									</div>
 								</div>
 
 							</div>
-						<!-- </div> -->
+						</div>
 
-						<div class = "box1 knitwear" >
+						<div class = "box1 coats" >
 
 							<div class  = "imgSize" data-parent = "imgs">
-								<img src = "images/if_FW21.jpg" alt = "img" id = "firstImg" /> 
+								<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/IF_shoes_08312018_8469_0ac6082e-4cc0-4190-b470-a3ccc71b14b8.jpg?v=1588523643" alt = "img" id = "firstImg" /> 
 
 								<div class = "hidden">
-									<img src = "images/if_FW22.jpg" alt = "img" id = "hiddenImg" />	
+									<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/IF_shoes_08312018_8472_d4eeabe6-0120-43c6-b9af-f9976ad40921.jpg?v=1588523643" alt = "img" id = "hiddenImg" />	
 								</div>
 							</div>	
 
 							<div class = "boxText">
-								<p>Akbota</p>
-									<h3>akbota Flint Thatch Stripe Blanket Sweep Vest</h3>
+								<p>GUIDI</p>
+								<h3>Guidi 112 Black Horse Full Grain Derby</h3>
 								
 								<div class = "price">
-									<div class = "productPrice">$705.00</div>
+									<div class = "productPrice">$1,380.00</div>
 								</div>
 							</div>
 
 						</div>
 
-						<div class = "box1 shirts">
+						<div class = "box1 coats">
 
 							<div class  = "imgSize" data-parent = "imgs">
-								<img src = "images/if_FW24jpg.jpg" alt = "img" id = "firstImg" /> 
+								<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/IF_shoes_08312018_8469_0ac6082e-4cc0-4190-b470-a3ccc71b14b8.jpg?v=1588523643" alt = "img" id = "firstImg" /> 
 
 								<div class = "hidden">
-									<img src = "images/if_FW23.jpg" alt = "img" id = "hiddenImg" />	
+									<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/IF_shoes_08312018_8472_d4eeabe6-0120-43c6-b9af-f9976ad40921.jpg?v=1588523643" alt = "img" id = "hiddenImg" />	
 								</div>
 							</div>	
 
 							<div class = "boxText">
-								<p>Akbota</p>
-								<h3>Akbota Basket Weave Printed Twill The Draughtsman Shirtr</h3>
+								<p>GUIDI</p>
+								<h3>Guidi 112 Black Horse Full Grain Derby</h3>
 								
 								<div class = "price">
-									<div class = "productPrice">$805.00</div>
+									<div class = "productPrice">$1,155.00</div>
 								</div>
 							</div>
 
 						</div>
 
 
-						<div class = "box1 tops" >
+						<div class = "box1 jocket" >
 
 							<div class  = "imgSize" data-parent = "imgs">
-								<img src = "images/if_FW19.jpg" alt = "img" id = "firstImg" /> 
+								<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_SS20_0427206879.jpg?v=1588366579" alt = "img" id = "firstImg" /> 
 
 								<div class = "hidden">
-									<img src = "images/if_FW20.jpg" alt = "img" id = "hiddenImg" />	
+									<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_SS20_0427206881.jpg?v=1588366579" alt = "img" id = "hiddenImg" />	
 								</div>
 							</div>	
 
 							<div class = "boxText">
-								<p>Nurzhan</p>
-								<h3>Nurzhan Six Pocket Wide Pants</h3>
+								<p>GUIDI</p>
+								<h3>Guidi 310 Black Soft Horse Full Grain Front Zip Calf-Length Army Boots</h3>
 								
 								<div class = "price">
-									<div class = "productPrice">$305.00</div>
+									<div class = "productPrice">$1,375.00</div>
 								</div>
 							</div>
 
 						</div>
 
 
-						<div class = "box1 jakets">
+						<div class = "box1 jocket">
 
 							<div class  = "imgSize" data-parent = "imgs">
-								<img src = "images/if_SS25.jpg" alt = "img" id = "firstImg" /> 
+								<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_SS20_0427206891.jpg?v=1588366724" alt = "img" id = "firstImg" /> 
 
 								<div class = "hidden">
-									<img src = "images/if_SS26.jpg" alt = "img" id = "hiddenImg" />	
+									<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_SS20_0427206893.jpg?v=1588366725" alt = "img" id = "hiddenImg" />	
 								</div>
 							</div>	
 
 							<div class = "boxText">
-								<p>Nurzhan</p>
-								<h3>Nurzhan Button Outer Pockets Jacket</h3>
+								<p>GUIDI</p>
+								<h3>Guidi 310 Red Soft Horse Full Grain Front Zip Calf-Length Army Boots</h3>
 								
 								<div class = "price">
-									<div class = "productPrice">$1,860.00</div>
+									<div class = "productPrice">$1,375.00</div>
 								</div>
 							</div>
 
 						</div>
 
 
-						<div class = "box1 shirts" >
+						<div class = "box1 jocket" >
 
 							<div class  = "imgSize" data-parent = "imgs">
-								<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_SS20_022020-3549_large.jpg?v=1582665464" alt = "img" id = "firstImg" /> 
+								<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_SS20_0427206858.jpg?v=1588364759" alt = "img" id = "firstImg" /> 
 
 								<div class = "hidden">
-									<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_SS20_022020-3551_large.jpg?v=1582665464" alt = "img" id = "hiddenImg" />	
+									<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_SS20_0427206871.jpg?v=1588364760" alt = "img" id = "hiddenImg" />	
 								</div>
 							</div>	
 
 							<div class = "boxText">
-								<p>Nurzhan</p>
-								<h3>Nurzhan  Fitted Shirt</h3>
+								<p>GUIDI</p>
+								<h3>Guidi 310 White Soft Horse Full Grain Front Zip Calf-Length Army Boots</h3>
 								
 								<div class = "price">
-									<div class = "productPrice">$1015.00</div>
+									<div class = "productPrice">$1,375.00</div>
 								</div>
 							</div>
 
 						</div>
 
-						<div class = "box1 jakets" >
+						<div class = "box1 jocket" >
 
 							<div class  = "imgSize" data-parent = "imgs">
-								<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_FW21_08182134115_large.jpg?v=1629923295" alt = "img" id = "firstImg" /> 
+								<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_SS20_0427207009.jpg?v=1588360620" alt = "img" id = "firstImg" /> 
 
 								<div class = "hidden">
-									<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_FW21_08182134117_large.jpg?v=1629923295" alt = "img" id = "hiddenImg" />	
-								</div>
-
-								<div class = "icoSold">
-									<div class = "icon">Sold Out</div>
-								</div>	
-							</div>	
-
-							<div class = "boxText">
-								<p>Casey Casey</p>
-								<h3>Casey Casey Tan Black Javari Jacket</h3>
-								
-								<div class = "price">
-									<div class = "productPrice">$653.00</div>
-								</div>
-							</div>
-
-							
-
-						</div>
-
-
-						<div class = "box1 tops" >
-
-							<div class  = "imgSize" data-parent = "imgs">
-								<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_FW21_08182134137_large.jpg?v=1629925070" alt = "img" id = "firstImg" /> 
-
-								<div class = "hidden">
-									<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_FW21_08182134138_large.jpg?v=1629925070" alt = "img" id = "hiddenImg" />	
+									<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_SS20_0427207013.jpg?v=1588360620" alt = "img" id = "hiddenImg" />	
 								</div>
 							</div>	
 
 							<div class = "boxText">
-								<p>Casey Casey</p>
-								<h3>Casey Casey Mustard Black Pooja Pants</h3>
+								<p>GUIDI</p>
+								<h3>Guidi 792 White Soft Horse Full Grain Derby</h3>
 								
 								<div class = "price">
-									<div class = "productPrice">$655.00</div>
+									<div class = "productPrice">$1,005.00</div>
 								</div>
 							</div>
 
 						</div>
 
 
-
-
-						<div class = "box1 coats archivio" >
+						<div class = "box1 jocket" >
 
 							<div class  = "imgSize" data-parent = "imgs">
-
-								<img src = "images/if_SS20_0422205046_large.jpg" alt = "img" id = "firstImg" /> 
-
-								<div class = "hidden">
-									<img src = "images/if_SS20_0422205049_large.jpg" alt = "img" id = "hiddenImg" />	
-								</div>
-
-								<div class = "icoSold">
-									<div class = "icon">Sold Out</div>
-								</div>	
-							</div>
-
-
-							<div class = "boxText">
-								<p>Archivio J.M Ribot</p>
-								<h3>Archivio J.M Ribot Black Heavy Silk Satin Notch Flowers Classic Blazer</h3>
-								
-								<div class = "price">
-									<div class = "productPrice">$1015.00</div>
-								</div>
-							</div>
-
-						</div>
-
-
-						<div class = "box1 jakets" >
-
-							<div class  = "imgSize" data-parent = "imgs">
-								<img src = "images/large80.jpg" alt = "img" id = "firstImg" /> 
+								<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/IF_shoes_08312018_8657.jpg?v=1536789256" alt = "img" id = "firstImg" /> 
 
 								<div class = "hidden">
-									<img src = "images/large81.jpg" alt = "img" id = "hiddenImg" />	
+									<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/IF_shoes_08312018_8662.jpg?v=1536789256" alt = "img" id = "hiddenImg" />	
 								</div>
 							</div>	
 
 							<div class = "boxText">
-								<p>Casey Casey</p>
-								<h3>Casey Casey Black Stripe J Jacket</h3>
+								<p>GUIDI</p>
+								<h3>Guidi 792Z Black Cordovan Contrario Stacked Derby</h3>
 								
 								<div class = "price">
-									<div class = "productPrice">$1015.00</div>
+									<div class = "productPrice">$1,210.00</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class = "box1 jocket" >
+
+							<div class  = "imgSize" data-parent = "imgs">
+								<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_SS20_0427206988.jpg?v=1588361122" alt = "img" id = "firstImg" /> 
+
+								<div class = "hidden">
+									<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_SS20_0427206991.jpg?v=1588361122" alt = "img" id = "hiddenImg" />	
+								</div>
+							</div>	
+
+							<div class = "boxText">
+								<p>GUIDI</p>
+								<h3>Guidi 793Z Black Soft Horse Full Grain Lace-Up Ankle Boots</h3>
+								
+								<div class = "price">
+									<div class = "productPrice">$1,180.00</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class = "box1 jocket" >
+
+							<div class  = "imgSize" data-parent = "imgs">
+								<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_SS20_0427206953.jpg?v=1588363977" alt = "img" id = "firstImg" /> 
+
+								<div class = "hidden">
+									<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_SS20_0427206955.jpg?v=1588363978" alt = "img" id = "hiddenImg" />	
+								</div>
+							</div>	
+
+							<div class = "boxText">
+								<p>GUIDI</p>
+								<h3>Guidi 796 Black Soft Horse Full Grain Back Zip Ankle Boots</h3>
+								
+								<div class = "price">
+									<div class = "productPrice">$1,415.00</div>
+								</div>
+							</div>
+
+						</div>
+
+                       
+
+						<div class = "box1 jocket" >
+
+							<div class  = "imgSize" data-parent = "imgs">
+								<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_SS20_0427206963.jpg?v=1588363860" alt = "img" id = "firstImg" /> 
+
+								<div class = "hidden">
+									<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_SS20_0427206967.jpg?v=1588363860" alt = "img" id = "hiddenImg" />	
+								</div>
+							</div>	
+
+							<div class = "boxText">
+								<p>GUIDI</p>
+								<h3>Guidi 796 Brown Soft Horse Full Grain Back Zip Ankle Boots</h3>
+								
+								<div class = "price">
+									<div class = "productPrice">$1,36000</div>
 								</div>
 							</div>
 
 						</div>
 
 
+                       
+						<div class = "box1 jocket" >
+
+							<div class  = "imgSize" data-parent = "imgs">
+								<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/IF_shoes_08312018_9075.jpg?v=1536791616" alt = "img" id = "firstImg" /> 
+
+								<div class = "hidden">
+									<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/IF_shoes_08312018_9079.jpg?v=1536791618" alt = "img" id = "hiddenImg" />	
+								</div>
+							</div>	
+
+							<div class = "boxText">
+								<p>GUIDI</p>
+								<h3>Guidi 986 Brown Horse Full Grain Back Zip Boots</h3>
+								
+								<div class = "price">
+									<div class = "productPrice">$1,305.00</div>
+								</div>
+							</div>
+
+						</div>
 					</div>
 				</div>
 
@@ -549,7 +557,7 @@
 		</div>
 	</div>
 
-	<br /> <br /><br /> <br />
+		<br /> <br /><br /> <br />
 
 		<footer>
 			<div class = "linedata">
@@ -596,7 +604,6 @@
 	</footer>
 
 	<script type="text/javascript" defer src = "js/borderInfoData.js"></script>
-	<script type="text/javascript" defer  src = "js/changeBoxs.js"></script>
-
+	<script type="text/javascript" src = "js/changeBoxs.js"></script>
 </body>
 </html>

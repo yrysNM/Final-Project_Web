@@ -3,18 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Men's</title>
+	<title>Women's</title>
 
 	<link rel = "icon" href = "https://cdn.shopify.com/s/files/1/1618/4925/t/29/assets/favicon.png?v=8025241575976003150" />
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-	<link href = "scss/build/css/styleMen.css" rel ="stylesheet" type = "text/css"/>
+	<link href = "scss/build/css/styleWomens.css" rel ="stylesheet" />
 
-	<!-- <link href = "https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel = "stylesheet" /> -->
+	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.min.js"></script>
 </head>
 <body>	
 	<header>
@@ -52,12 +51,12 @@
 
 						<ul class="submenu">
           
-				          <li><a href="#">All Men's</a>
+				          <li><a href="/collections/men">All Men's</a>
 				            
 				            
 				          </li>
 				          
-				          <li><a href="#coats">Coats</a>
+				          <li><a href="/collections/mens-coats">Coats</a>
 				            
 				            
 				          </li>
@@ -232,18 +231,18 @@
 
 	<div class = "content">
 		<div class = "HomeandPageName">
-			<a href = "../../index.html">Home/</a><span>Men's</span>
+			<a href = "../../index.html">Home/</a><span>Women's</span>
 		</div>
 
 		<div class = "headText">
-			<h1>Men's</h1>
+			<h1>Women's</h1>
 			<div class = "line"></div>
 		</div>
 
 		<div class = "dataAllClothing">
 
 				<div class = "headContentText">
-					<p>Shop Men's Avant Garde, High End Designer Clothing By Yohji Yamamoto, Paul Harnden & Many More…</p>
+					<p>Shop Womens Avant Garde, High End Designer Clothing By  Ivan Grundahl, Comme Des Garcons & Many More…</p>
 				</div>
 
 			<div class = "slides">
@@ -268,7 +267,7 @@
 
 					<div class = "infoSearch">
 						<div class = "text1">
-							<p>Men</p> <span data-clear = "clearAll" class = "no-underline hover:underline ... clear">Clear All</span>
+							<p>Women</p> <span data-clear = "clearAll">Clear All</span>
 						</div>	
 						
 						<div class = "line"></div>
@@ -276,16 +275,18 @@
 						<div class = "listInfo">
 							<ol>
 								<li data-handle = "coats" id = "li"><a href = "#" id = "tagA" name = "coats" class = "hideStyle ">Coats</a></li>
+								<li data-handle = "dresses" id = "li"><a href = "#" id = "tagA" class = "hideStyle">Dresses</a></li>
 								<li data-handle = "jakets" id = "li"><a href = "#" id = "tagA" class = "hideStyle ">Jakets</a></li>
 								<li data-handle = "knitwear" id = "li"><a href = "#" id = "tagA" class = "hideStyle ">Knitwear</a></li>
 								<li data-handle = "shirts" id = "li"><a href = "#" id = "tagA" class = "hideStyle ">Shirts</a></li>
+								<li data-handle = "skirts" id = "li"><a href = "#" id = "tagA" class = "hideStyle">Skirts</a></li>
 								<li data-handle = "tops" id = "li"><a href = "#" id = "tagA" class = "hideStyle ">Tops</a></li>
 							</ol>
 						</div>
 
-					<div class = "text1 mt-8" style = "margin-top: 20px">
-						<p>DESIGNERS</p> <span data-clear = "clearAll" class = "clear">Clear All </span>
-					</div>
+						<div class = "text1 mt-8" style = "margin-top: 20px">
+							<p>DESIGNERS</p> <span data-clear = "clearAll" class = "clear">Clear All </span>
+						</div>
 
 					<div class = "line"></div>
 
@@ -308,239 +309,267 @@
 					<div class = "boxesImg" id = "app">
 
 						<!-- {{ show }} -->
-						<!-- <div id = "searchData"> -->
-							<div class = "box1 knitwear">
+						<div id = "searchData">
+							<div class = "box1 coats">
 
 								<div class  = "imgSize" data-parent = "imgs">
-									<img src = "images/large1.jpg" alt = "img" id = "firstImg" /> 
+									<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_FW21_091421-37172.jpg?v=1632845671" alt = "img" id = "firstImg" /> 
 
-									<div class = "hidden  hover:opacity-100">
-										<img src = "images/large2.jpg" alt = "img" id = "hiddenImg" />	
+									<div class = "hidden">
+										<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_FW21_091421-37175.jpg?v=1632845672" alt = "img" id = "hiddenImg" />	
 									</div>
 								</div>	
 
 								<div class = "boxText">
-									<p>Akbota</p>
-									<h3>akbota Painted Slipwear The Baker Trouser</h3>
+									<p>A TENTATIVE ATELIER</p>
+									<h3>A Tentative Atelier Beige Garnet Skirt</h3>
 									
 									<div class = "price">
-										<div class = "productPrice">$905.00</div>
+										<div class = "productPrice">$960.00</div>
 									</div>
 								</div>
 
 							</div>
-						<!-- </div> -->
+						</div>
 
-						<div class = "box1 knitwear" >
+						<div class = "box1 coats" >
 
 							<div class  = "imgSize" data-parent = "imgs">
-								<img src = "images/if_FW21.jpg" alt = "img" id = "firstImg" /> 
+								<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_FW21_091421-37186.jpg?v=1632846198" alt = "img" id = "firstImg" /> 
 
 								<div class = "hidden">
-									<img src = "images/if_FW22.jpg" alt = "img" id = "hiddenImg" />	
+									<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_FW21_091421-37189.jpg?v=1632846197" alt = "img" id = "hiddenImg" />	
 								</div>
 							</div>	
 
 							<div class = "boxText">
-								<p>Akbota</p>
-									<h3>akbota Flint Thatch Stripe Blanket Sweep Vest</h3>
+								<p>A TENTATIVE ATELIER</p>
+								<h3>A Tentative Atelier Beige Modesta Coat</h3>
 								
 								<div class = "price">
-									<div class = "productPrice">$705.00</div>
+									<div class = "productPrice">$1,380.00</div>
 								</div>
 							</div>
 
 						</div>
 
-						<div class = "box1 shirts">
+						<div class = "box1 coats">
 
 							<div class  = "imgSize" data-parent = "imgs">
-								<img src = "images/if_FW24jpg.jpg" alt = "img" id = "firstImg" /> 
+								<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_FW21_091421-37260.jpg?v=1632852234" alt = "img" id = "firstImg" /> 
 
 								<div class = "hidden">
-									<img src = "images/if_FW23.jpg" alt = "img" id = "hiddenImg" />	
+									<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_FW21_091421-37262.jpg?v=1632852234" alt = "img" id = "hiddenImg" />	
 								</div>
 							</div>	
 
 							<div class = "boxText">
-								<p>Akbota</p>
-								<h3>Akbota Basket Weave Printed Twill The Draughtsman Shirtr</h3>
+								<p>A TENTATIVE ATELIER</p>
+								<h3>A Tentative Atelier Beige Sabine Dress</h3>
 								
 								<div class = "price">
-									<div class = "productPrice">$805.00</div>
+									<div class = "productPrice">$1,155.00</div>
 								</div>
 							</div>
 
 						</div>
 
 
-						<div class = "box1 tops" >
+						<div class = "box1 jocket" >
 
 							<div class  = "imgSize" data-parent = "imgs">
-								<img src = "images/if_FW19.jpg" alt = "img" id = "firstImg" /> 
+								<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_FW21_091421-37121.jpg?v=1632843386" alt = "img" id = "firstImg" /> 
 
 								<div class = "hidden">
-									<img src = "images/if_FW20.jpg" alt = "img" id = "hiddenImg" />	
+									<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_FW21_091421-37123.jpg?v=1632843385" alt = "img" id = "hiddenImg" />	
 								</div>
 							</div>	
 
 							<div class = "boxText">
-								<p>Nurzhan</p>
-								<h3>Nurzhan Six Pocket Wide Pants</h3>
+								<p>A TENTATIVE ATELIER/p>
+								<h3>A Tentative Atelier Black Andres S Shirt Top</h3>
 								
 								<div class = "price">
-									<div class = "productPrice">$305.00</div>
+									<div class = "productPrice">$635.00</div>
 								</div>
 							</div>
 
 						</div>
 
 
-						<div class = "box1 jakets">
+						<div class = "box1 jocket">
 
 							<div class  = "imgSize" data-parent = "imgs">
-								<img src = "images/if_SS25.jpg" alt = "img" id = "firstImg" /> 
+								<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_FW21_091421-37160.jpg?v=1632845114" alt = "img" id = "firstImg" /> 
 
 								<div class = "hidden">
-									<img src = "images/if_SS26.jpg" alt = "img" id = "hiddenImg" />	
+									<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_FW21_091421-37162.jpg?v=1632845115" alt = "img" id = "hiddenImg" />	
 								</div>
 							</div>	
 
 							<div class = "boxText">
-								<p>Nurzhan</p>
-								<h3>Nurzhan Button Outer Pockets Jacket</h3>
+								<p>A TENTATIVE ATELIER</p>
+								<h3>A Tentative Atelier Black Gaspara Skirt</h3>
 								
 								<div class = "price">
-									<div class = "productPrice">$1,860.00</div>
+									<div class = "productPrice">$1,000.00</div>
 								</div>
 							</div>
 
 						</div>
 
 
-						<div class = "box1 shirts" >
+						<div class = "box1 jocket" >
 
 							<div class  = "imgSize" data-parent = "imgs">
-								<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_SS20_022020-3549_large.jpg?v=1582665464" alt = "img" id = "firstImg" /> 
+								<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_FW21_091421-37130.jpg?v=1632843647" alt = "img" id = "firstImg" /> 
 
 								<div class = "hidden">
-									<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_SS20_022020-3551_large.jpg?v=1582665464" alt = "img" id = "hiddenImg" />	
+									<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_FW21_091421-37133.jpg?v=1632843647" alt = "img" id = "hiddenImg" />	
 								</div>
 							</div>	
 
 							<div class = "boxText">
-								<p>Nurzhan</p>
-								<h3>Nurzhan  Fitted Shirt</h3>
+								<p>A TENTATIVE ATELIER</p>
+								<h3>A Tentative Atelier Black Beamont Cardigan</h3>
 								
 								<div class = "price">
-									<div class = "productPrice">$1015.00</div>
+									<div class = "productPrice">$960.00</div>
 								</div>
 							</div>
 
 						</div>
 
-						<div class = "box1 jakets" >
+						<div class = "box1 jocket" >
 
 							<div class  = "imgSize" data-parent = "imgs">
-								<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_FW21_08182134115_large.jpg?v=1629923295" alt = "img" id = "firstImg" /> 
+								<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_FW21_091421-37141.jpg?v=1632843972" alt = "img" id = "firstImg" /> 
 
 								<div class = "hidden">
-									<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_FW21_08182134117_large.jpg?v=1629923295" alt = "img" id = "hiddenImg" />	
-								</div>
-
-								<div class = "icoSold">
-									<div class = "icon">Sold Out</div>
-								</div>	
-							</div>	
-
-							<div class = "boxText">
-								<p>Casey Casey</p>
-								<h3>Casey Casey Tan Black Javari Jacket</h3>
-								
-								<div class = "price">
-									<div class = "productPrice">$653.00</div>
-								</div>
-							</div>
-
-							
-
-						</div>
-
-
-						<div class = "box1 tops" >
-
-							<div class  = "imgSize" data-parent = "imgs">
-								<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_FW21_08182134137_large.jpg?v=1629925070" alt = "img" id = "firstImg" /> 
-
-								<div class = "hidden">
-									<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_FW21_08182134138_large.jpg?v=1629925070" alt = "img" id = "hiddenImg" />	
+									<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_FW21_091421-37144.jpg?v=1632843973" alt = "img" id = "hiddenImg" />	
 								</div>
 							</div>	
 
 							<div class = "boxText">
-								<p>Casey Casey</p>
-								<h3>Casey Casey Mustard Black Pooja Pants</h3>
+								<p>A TENTATIVE ATELIER</p>
+								<h3>A Tentative Atelier Black Mud Jacobs W.W Jacket</h3>
 								
 								<div class = "price">
-									<div class = "productPrice">$655.00</div>
+									<div class = "productPrice">$1,270..00</div>
 								</div>
 							</div>
 
 						</div>
 
 
-
-
-						<div class = "box1 coats archivio" >
+						<div class = "box1 jocket" >
 
 							<div class  = "imgSize" data-parent = "imgs">
-
-								<img src = "images/if_SS20_0422205046_large.jpg" alt = "img" id = "firstImg" /> 
-
-								<div class = "hidden">
-									<img src = "images/if_SS20_0422205049_large.jpg" alt = "img" id = "hiddenImg" />	
-								</div>
-
-								<div class = "icoSold">
-									<div class = "icon">Sold Out</div>
-								</div>	
-							</div>
-
-
-							<div class = "boxText">
-								<p>Archivio J.M Ribot</p>
-								<h3>Archivio J.M Ribot Black Heavy Silk Satin Notch Flowers Classic Blazer</h3>
-								
-								<div class = "price">
-									<div class = "productPrice">$1015.00</div>
-								</div>
-							</div>
-
-						</div>
-
-
-						<div class = "box1 jakets" >
-
-							<div class  = "imgSize" data-parent = "imgs">
-								<img src = "images/large80.jpg" alt = "img" id = "firstImg" /> 
+								<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_FW21_091421-37280.jpg?v=1632852722" alt = "img" id = "firstImg" /> 
 
 								<div class = "hidden">
-									<img src = "images/large81.jpg" alt = "img" id = "hiddenImg" />	
+									<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_FW21_091421-37282.jpg?v=1632852722" alt = "img" id = "hiddenImg" />	
 								</div>
 							</div>	
 
 							<div class = "boxText">
-								<p>Casey Casey</p>
-								<h3>Casey Casey Black Stripe J Jacket</h3>
+								<p>A TENTATIVE ATELIER</p>
+								<h3>A Tentative Atelier Black Myron Long Jacket</h3>
 								
 								<div class = "price">
-									<div class = "productPrice">$1015.00</div>
+									<div class = "productPrice">$2,000.00</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class = "box1 jocket" >
+
+							<div class  = "imgSize" data-parent = "imgs">
+								<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_FW21_091421-37239.jpg?v=1632851795" alt = "img" id = "firstImg" /> 
+
+								<div class = "hidden">
+									<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_FW21_091421-37241.jpg?v=1632851795" alt = "img" id = "hiddenImg" />	
+								</div>
+							</div>	
+
+							<div class = "boxText">
+								<p>A TENTATIVE ATELIER</p>
+								<h3>A Tentative Atelier Black Sulpicia Dress</h3>
+								
+								<div class = "price">
+									<div class = "productPrice">$1,385.00</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class = "box1 jocket" >
+
+							<div class  = "imgSize" data-parent = "imgs">
+								<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_FW21_091421-37196.jpg?v=1632850390" alt = "img" id = "firstImg" /> 
+
+								<div class = "hidden">
+									<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_FW21_091421-37199.jpg?v=1632850390" alt = "img" id = "hiddenImg" />	
+								</div>
+							</div>	
+
+							<div class = "boxText">
+								<p>A TENTATIVE ATELIER</p>
+								<h3>A Tentative Atelier Mud Yellow Modesta Coat</h3>
+								
+								<div class = "price">
+									<div class = "productPrice">$1,580.00</div>
+								</div>
+							</div>
+
+						</div>
+
+                       
+
+						<div class = "box1 jocket" >
+
+							<div class  = "imgSize" data-parent = "imgs">
+								<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_FW21_091421-37223.jpg?v=1632851451" alt = "img" id = "firstImg" /> 
+
+								<div class = "hidden">
+									<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_FW21_091421-37227.jpg?v=1632851451" alt = "img" id = "hiddenImg" />	
+								</div>
+							</div>	
+
+							<div class = "boxText">
+								<p>A TENTATIVE ATELIER</p>
+								<h3>A Tentative Atelier Off White Matilda Coat</h3>
+								
+								<div class = "price">
+									<div class = "productPrice">$1,540.00</div>
 								</div>
 							</div>
 
 						</div>
 
 
+                       
+						<div class = "box1 jocket" >
+
+							<div class  = "imgSize" data-parent = "imgs">
+								<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_FW21_091421-37151.jpg?v=1632844374" alt = "img" id = "firstImg" /> 
+
+								<div class = "hidden">
+									<img src = "https://cdn.shopify.com/s/files/1/1618/4925/products/if_FW21_091421-37153.jpg?v=1632844374ё" alt = "img" id = "hiddenImg" />	
+								</div>
+							</div>	
+
+							<div class = "boxText">
+								<p>A TENTATIVE ATELIER</p>
+								<h3>A Tentative Atelier Mud Yellow Modesta Coat</h3>
+								
+								<div class = "price">
+									<div class = "productPrice">$1,580.00</div>
+								</div>
+							</div>
+
+						</div>
 					</div>
 				</div>
 
@@ -548,6 +577,7 @@
 
 		</div>
 	</div>
+
 
 	<br /> <br /><br /> <br />
 
@@ -595,8 +625,8 @@
 			 </div>
 	</footer>
 
+	
 	<script type="text/javascript" defer src = "js/borderInfoData.js"></script>
-	<script type="text/javascript" defer  src = "js/changeBoxs.js"></script>
-
+	<script type="text/javascript" src = "js/changeBoxs.js"></script>
 </body>
 </html>

@@ -2,7 +2,7 @@
 
 Final project is a team project. In one team can be 1-4 students. You can do final project with other practice class students, 	 however you must have the same lecturer. Final project weights 40%. Requirements of final project are:
 
- 1)Number of web pages must be at least 10. ❎ 1 MORE PAGE 
+ 1)Number of web pages must be at least 10. ✅ (❎ 1 MORE PAGE) 
 
  2)Web pages must have at least one tag "<"i">, <"hr">, <"textarea">, <"ul">, <"ol">"(not in all web pages). ✅
 
