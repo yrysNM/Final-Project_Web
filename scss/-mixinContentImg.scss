@@ -11,7 +11,6 @@
 		flex-direction: column;
 		justify-content:  center;
 		text-align: center;
-		
 		.gerg
 		{
 
@@ -21,10 +20,9 @@
 				background-position: center center; 
 				background-repeat: no-repeat;
 				background-size: cover; 
-
 				.contentSection
 				{
-						min-height:100vh ;
+						min-height:100vmin;
 						margin-bottom: 40px;
 				}
 			}

@@ -196,3 +196,63 @@ a
 	}
 
 }
+
+@media(max-width: 375px) {
+		
+
+		header {
+			
+			.heading {
+				width: 320px;
+				margin: 0 auto;
+				.divlogo {
+					margin-left: 20px;
+				}
+
+				.navbar {
+					ul
+					{
+
+						text-align: center;
+						li {
+							a { 
+								padding-top: 5px;
+								padding-bottom: 5px;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.content {
+		
+
+			.gerg
+			{
+				.justText
+				{
+					width: 320px;
+					margin: 0 auto;
+				}
+			}
+		}
+
+		footer 
+		{
+		
+			.linedata {
+				display: flex;
+				flex-flow: column wrap;
+				height: 100px;
+
+			}
+
+			.links
+			{
+				width: 320px;
+				margin: 0 auto;
+				
+			}
+		}
+}

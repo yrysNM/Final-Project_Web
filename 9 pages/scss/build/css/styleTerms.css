@@ -251,3 +251,98 @@ footer {
       display: inline-block; }
       footer .links ul li a {
         color: #333333; }
+
+@media (max-width: 991px) {
+  html {
+    font-size: 60%; }
+  header .heading {
+    width: 768px;
+    margin: 0 auto; }
+    header .heading .navbar ul {
+      text-align: center; }
+  .content {
+    width: 768px;
+    margin: 0 auto;
+    margin-top: 14.5rem; }
+    .content .headText .line {
+      width: 768px;
+      width: 0 auto; }
+    .content .pos_btns {
+      left: 0;
+      top: 0; }
+      .content .pos_btns .btns {
+        position: relative;
+        margin-bottom: 30px;
+        max-width: calc(100% - 0px); }
+  footer {
+    font-size: 1rem; }
+    footer .email i {
+      font-size: 1.5rem; } }
+
+@media (max-width: 768px) {
+  header .heading {
+    width: 425px;
+    margin: 0 auto;
+    padding-bottom: 50px; }
+    header .heading .navbar {
+      position: relative;
+      top: 35px; }
+      header .heading .navbar ul li a {
+        font-size: 1rem;
+        padding: 0 3px; }
+  .content {
+    width: 425px;
+    margin: 0 auto;
+    margin-top: 14.5rem; }
+    .content .headText .line {
+      width: 425px;
+      width: 0 auto; }
+    .content .imgDiv2 {
+      justify-content: center; }
+  footer .linedata .join .emailInput {
+    width: 250px;
+    font-size: 1rem; }
+  footer .linedata .join .smallButton {
+    width: 100px;
+    font-size: 1rem; }
+  footer .links {
+    width: 425px;
+    margin: 0 auto; }
+    footer .links ul li {
+      display: block;
+      text-align: center;
+      margin: 20px 0;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #e6e6e6; } }
+
+@media (max-width: 375px) {
+  header .heading {
+    width: 320px;
+    margin: 0 auto; }
+    header .heading .divlogo {
+      margin-left: 20px; }
+    header .heading .navbar ul {
+      text-align: center; }
+      header .heading .navbar ul li a {
+        padding-top: 5px;
+        padding-bottom: 5px; }
+  .content {
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 18.5rem; }
+    .content .headText .line {
+      width: 320px;
+      width: 0 auto; }
+    .content .Hisimg img {
+      width: 255px; }
+    .content .imgDiv2 {
+      justify-content: center; }
+      .content .imgDiv2 img {
+        width: 166px; }
+  footer .linedata {
+    display: flex;
+    flex-flow: column wrap;
+    height: 100px; }
+  footer .links {
+    width: 320px;
+    margin: 0 auto; } }

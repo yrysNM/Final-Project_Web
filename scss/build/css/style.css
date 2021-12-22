@@ -127,7 +127,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover; }
     .content .gerg .img .contentSection {
-      min-height: 100vh;
+      min-height: 100vmin;
       margin-bottom: 40px; }
   .content .gerg .justText {
     width: 980px;
@@ -256,3 +256,25 @@ footer {
       margin: 20px 0;
       padding-bottom: 20px;
       border-bottom: 1px solid #e6e6e6; } }
+
+@media (max-width: 375px) {
+  header .heading {
+    width: 320px;
+    margin: 0 auto; }
+    header .heading .divlogo {
+      margin-left: 20px; }
+    header .heading .navbar ul {
+      text-align: center; }
+      header .heading .navbar ul li a {
+        padding-top: 5px;
+        padding-bottom: 5px; }
+  .content .gerg .justText {
+    width: 320px;
+    margin: 0 auto; }
+  footer .linedata {
+    display: flex;
+    flex-flow: column wrap;
+    height: 100px; }
+  footer .links {
+    width: 320px;
+    margin: 0 auto; } }
