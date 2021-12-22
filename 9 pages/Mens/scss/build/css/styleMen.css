@@ -275,7 +275,8 @@ header {
               font-weight: 400;
               font-size: 13px;
               line-height: 1.25;
-              margin-bottom: 1em; }
+              margin-bottom: 1em;
+              text-transform: none; }
             .content .dataAllClothing .slides .rightBox .boxesImg .box1 .boxText .price .productPrice {
               font-weight: 700; }
 

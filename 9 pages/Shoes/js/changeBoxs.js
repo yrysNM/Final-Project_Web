@@ -119,9 +119,7 @@ window.addEventListener("DOMContentLoaded", () => {
 											}
 										}
 
-										if(metaData.changeobjShow[0].classList.contains("hideStyle") && metaData.changeobjShow[1].classList.contains("hideStyle") && 
-															metaData.changeobjShow[2].classList.contains("hideStyle") && metaData.changeobjShow[3].classList.contains("hideStyle") && 
-															metaData.changeobjShow[4].classList.contains("hideStyle")) {
+										if(metaData.changeobjShow[0].classList.contains("hideStyle") && metaData.changeobjShow[1].classList.contains("hideStyle")) {
 																/* for(let i = 0;  i < boxs.length; i++) {
 																
 																	 metaData.objBoxs[i].style.display = "block";
