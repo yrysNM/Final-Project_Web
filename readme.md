@@ -25,7 +25,7 @@ Final project is a team project. In one team can be 1-4 students. You can do fin
 
 ## Бызде уже тен жартысы дайын тек  mobile adaptable and 1 page null то есть 1 страница мен   adaptable жок так мен 
 ## max-width: 991px and max-width: 778px точно емес размер но style.scss корсендер болады path("...\Atelier New York\scss\style.scss") ышынде бар index.html mobile adaptable ipod and iphone  6/7/8
-![alt text](images/screen1.jpg);  ![alt text](images/screen2.jpg);
+![alt text](images/screen1.png);  ![alt text](images/screen2.png);
 
 
 
