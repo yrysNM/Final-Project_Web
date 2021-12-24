@@ -170,6 +170,12 @@ header {
           padding-left: 5px;
           -webkit-appearance: none;
           background: url("https://cdn.shopify.com/s/files/1/1618/4925/t/29/assets/select-arrow.png?v=11259594172122509499") right no-repeat; }
+        .content .dataAllClothing .slides .leftBox .icon #menu-btn {
+          display: none; }
+        .content .dataAllClothing .slides .leftBox .activite {
+          display: block; }
+        .content .dataAllClothing .slides .leftBox .hidden {
+          display: none; }
         .content .dataAllClothing .slides .leftBox .infoSearch {
           /* .text2
 						{
@@ -349,3 +355,117 @@ footer {
       display: inline-block; }
       footer .links ul li a {
         color: #333333; }
+
+@media (max-width: 991px) {
+  html {
+    font-size: 60%; }
+  header .heading {
+    width: 768px;
+    margin: 0 auto; }
+    header .heading .navbar ul {
+      text-align: center; }
+  .content {
+    width: 768px;
+    margin: 0 auto;
+    margin-top: 14.5rem; }
+    .content .headText .line {
+      width: 768px;
+      width: 0 auto; }
+    .content .dataAllClothing .slides .leftBox {
+      margin-right: 20px; }
+    .content .dataAllClothing .slides .rightBox .boxesImg {
+      grid-template-columns: repeat(2, 1fr); }
+  footer {
+    font-size: 1rem; }
+    footer .email i {
+      font-size: 1.5rem; } }
+
+@media (max-width: 768px) {
+  header .heading {
+    width: 625px;
+    margin: 0 auto;
+    padding-bottom: 50px; }
+    header .heading .navbar {
+      position: relative;
+      top: 35px; }
+      header .heading .navbar ul li a {
+        font-size: 1rem;
+        padding: 0 3px; }
+  .content {
+    width: 625px;
+    margin: 0 auto;
+    margin-top: 14.5rem; }
+    .content .headText .line {
+      width: 625px;
+      width: 0 auto; }
+    .content .imgDiv2 {
+      justify-content: center; }
+  footer .linedata .join .emailInput {
+    width: 250px;
+    font-size: 1rem; }
+  footer .linedata .join .smallButton {
+    width: 100px;
+    font-size: 1rem; }
+  footer .links {
+    width: 625px;
+    margin: 0 auto; }
+    footer .links ul li {
+      display: block;
+      text-align: center;
+      margin: 20px 0;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #e6e6e6; } }
+
+@media (max-width: 375px) {
+  header .heading {
+    width: 320px;
+    margin: 0 auto; }
+    header .heading .divlogo {
+      margin-left: 20px; }
+    header .heading .navbar ul {
+      text-align: center; }
+      header .heading .navbar ul li a {
+        padding-top: 5px;
+        padding-bottom: 5px; }
+  .content {
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 14.5rem; }
+    .content .headText .line {
+      width: 320px;
+      width: 0 auto; }
+    .content .dataAllClothing .slides {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center; }
+      .content .dataAllClothing .slides .leftBox {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center; }
+        .content .dataAllClothing .slides .leftBox .leftBoxheadText p {
+          position: relative;
+          right: 95px; }
+        .content .dataAllClothing .slides .leftBox .selec select {
+          position: relative;
+          right: 48px; }
+        .content .dataAllClothing .slides .leftBox .icon {
+          position: relative;
+          top: -40px;
+          left: 150px; }
+          .content .dataAllClothing .slides .leftBox .icon #menu-btn {
+            display: inline-block;
+            font-size: 2.3rem; }
+        .content .dataAllClothing .slides .leftBox .infoSearch {
+          text-align: center;
+          margin-bottom: 50px; }
+      .content .dataAllClothing .slides .rightBox .boxesImg {
+        grid-template-columns: repeat(2, 1fr); }
+        .content .dataAllClothing .slides .rightBox .boxesImg .box1 .imgSize .icoSold {
+          top: -16rem; }
+  footer .linedata {
+    display: flex;
+    flex-flow: column wrap;
+    height: 100px; }
+  footer .links {
+    width: 320px;
+    margin: 0 auto; } }

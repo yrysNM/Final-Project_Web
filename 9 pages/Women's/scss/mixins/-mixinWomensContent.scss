@@ -68,6 +68,8 @@
 						}
 					}
 
+
+
 					.selec
 					{
 						select
@@ -85,8 +87,29 @@
 						}
 					}
 
+					.icon{
+
+						#menu-btn 
+						{
+							display: none;
+						}
+					}
+
+					.activite
+					{
+						    display: block;
+						
+					}
+
+					.hidden {
+						display: none;
+					}
+
 					.infoSearch
 					{
+						
+
+
 						.text1
 						{
 							display: flex;
