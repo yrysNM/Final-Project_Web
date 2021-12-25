@@ -12,6 +12,8 @@
 
 	<link href = "scss/build/css/style.css" rel ="stylesheet" />
 
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 <body>
 	<header>
@@ -288,5 +290,43 @@
 		    </ul>
 			 </div>
 	</footer>
+
+	<div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+
+					<canvas class="snow1"></canvas>
+					<canvas class="snow2"></canvas>
+				
+					<div class="time" >
+						<i class="wi wi-snowflake-cold flake"></i>
+						<div data-close class="modal__close">&times;</div>
+						<div id="countdown" class="countdown">
+							<h3> Sale for Merry Christmas </h3>
+						  <div class="countdown-number">
+							<span class="days countdown-time"></span>
+							<span class="countdown-text" id = "days">Days</span>
+						  </div>
+						  <div class="countdown-number">
+							<span class="hours countdown-time"></span>
+							<span class="countdown-text" id = "hours">Hours</span>
+						  </div>
+						  <div class="countdown-number">
+							<span class="minutes countdown-time"></span>
+							<span class="countdown-text" id = "minutes">Minutes</span>
+						  </div>
+						  <div class="countdown-number">
+							<span class="seconds countdown-time"></span>
+							<span class="countdown-text" id = "seconds">Seconds</span>
+						  </div>
+						  <button type="button" class="btn btn-outline-success">Success</button>
+						</div>
+					</div>
+                </div>
+       
+        </div>
+    </div>
+
+    <script type="text/javascript" src = "js/modalFunction.js"></script>
 </body>
 </html>

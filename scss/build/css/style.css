@@ -210,6 +210,150 @@ footer {
       footer .links ul li a {
         color: #333333; }
 
+
+
+h3{
+  color: rgb(134, 34, 34);
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Assistant", sans-serif;
+  
+}
+  
+    .countdown {
+      font-family: sans-serif;
+      color: rgb(10, 10, 10);
+      /* display: inline-block; */
+      font-weight: 100;
+      text-align: center;
+      font-size: 15px;
+    }
+    
+    .countdown-number {
+     margin: 25px 0px 25px;
+      padding: 7.5px;
+      border-radius: 3px;
+      background: rgb(119, 119, 119);
+      display: inline-block;
+    }
+    
+    .countdown-time {
+      padding: 25px;
+      border-radius: 3px;
+      background: #ffffff;
+      display: inline-block;
+    }
+    
+    .countdown-text {
+      display: block;
+      color: #ffffff;
+      padding-top: 10px;
+      font-size: 15px;
+    }
+
+    .show {
+      display: block;
+  }
+  
+
+  canvas {
+    padding: 0;
+    margin: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+  }
+
+
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0,.6);
+}
+.modal__dialog {
+
+  width: 500px;
+  margin: 110px auto;
+}
+.time{
+  position:relative;
+  width: 100%;
+  padding: 40px;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 4px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+.modal__close{
+  position:absolute;
+  top:8px;
+  right:14px;
+  font-size:30px;
+  color:#000;
+  opacity:.5;
+  font-weight:700;
+  border:none;
+  background-color:
+  transparent;
+  cursor:pointer
+}
+
+.modal__content {
+
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 4px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+.btn {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.btn:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.show{display:block}
+.hide{display:none}
+.fade{animation-name: fade;animation-duration: 1.5s;}
+@keyframes fade{from{opacity: 0.5;}to{opacity: 2;}}
+
+
+
+
+
+
+
+
+
 /* addapdate 📲📲 */
 @media (max-width: 991px) {
   html {
@@ -257,24 +401,50 @@ footer {
       padding-bottom: 20px;
       border-bottom: 1px solid #e6e6e6; } }
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
   header .heading {
     width: 320px;
     margin: 0 auto; }
+   
     header .heading .divlogo {
       margin-left: 20px; }
+    
     header .heading .navbar ul {
       text-align: center; }
+    
       header .heading .navbar ul li a {
         padding-top: 5px;
-        padding-bottom: 5px; }
+        padding-bottom: 5px; 
+      }
+  
   .content .gerg .justText {
     width: 320px;
-    margin: 0 auto; }
+    margin: 0 auto; 
+  }
+  
   footer .linedata {
     display: flex;
     flex-flow: column wrap;
-    height: 100px; }
+    height: 100px; 
+  }
+ 
   footer .links {
     width: 320px;
-    margin: 0 auto; } }
+    margin: 0 auto; 
+
+  } 
+
+  .modal .modal__dialog
+  {
+    width: 250px;
+  }
+
+  .countdown-time {
+    padding: 5px;
+  }
+
+  }
+
+
+
+
