@@ -272,20 +272,20 @@
 			<div class = "rightBox">
 				<div class = "conText">Create Account</div>
 
-				<form class = "formSec">
+				<form class = "formSec" action = "#">
 					<div class = "sec1">
 						<div class ="textEmail">First Name</div>
-						<input type = "text" id = "firstName" placeholder="" >
+						<input type = "text" name = "firstName" id = "firstName" placeholder="" >
 					</div>
 
 					<div class = "sec1">
 						<div class ="textEmail">Last Name</div>
-						<input type = "text" id = "secondName" placeholder="" >
+						<input type = "text"  name = "secondName" id = "secondName" placeholder="" >
 					</div>
 
 					<div class = "sec1">
 						<div class ="textEmail">Email</div>
-						<input type = "email" id = "email" placeholder="" >
+						<input type = "email" id = "email"name = "email" placeholder="" >
 
 							<span class = "pwd-formatEmail">
 								Please enter the correct email address.
@@ -294,7 +294,7 @@
 
 					<div class = "sec1">
 						<div class ="textEmail">Password</div>
-						<input type = "password"  id = "password" placeholder="" >
+						<input type = "password"  id = "password"name = "password" placeholder="" >
 						          <span class="pwd-format">
 					                    8-15 AlphaNumeric Characters
 					              </span>
@@ -308,9 +308,11 @@
 						<input type = "radio" value = "Male" name = "contact" type = "gender" id = "female" style = "width: 80px; height: 15px;" > 
 						<label for = "female"  style = "top: -4px; position: relative;">Female</label>
 					</div>
+
+					<button id = "singUp" class = "btnSing">Create</button>
+					
 				</form>
 
-				<button id = "singUp" class = "btnSing">Create</button>
 			</div>
 		</div>
 
@@ -366,8 +368,8 @@
 			 </div>
 	</footer>
 
-	<script type="text/javascript" defer src = "js/scriptLogin.js"></script>
-
+	<!-- <script type="text/javascript" defer src = "js/scriptLogin.js"></script> -->
+	<script type="text/javascript" defer src = "js/script.js"></script>
 <!-- 	<script> test vue js
 		var app = new Vue({
 			el: "#app",

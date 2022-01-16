@@ -1,148 +1,56 @@
+
+
+
+
+window.addEventListener('DOMContentLoaded', function() {   
+
+//Time
 function getTimeRemaining(endtime) {
-    var t = Date.parse(endtime) - Date.parse(new Date());
-    var seconds = Math.floor((t / 1000) % 60);
-    var minutes = Math.floor((t / 1000 / 60) % 60);
-    var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-    var days = Math.floor(t / (1000 * 60 * 60 * 24));
-    return {
-      'total': t,
-      'days': days,
-      'hours': hours,
-      'minutes': minutes,
-      'seconds': seconds
-    };
-  }
-  
-  function initializeClock(id, endtime) {
-    var clock = document.getElementById(id);
-    var daysSpan = clock.querySelector('.days');
-    var hoursSpan = clock.querySelector('.hours');
-    var minutesSpan = clock.querySelector('.minutes');
-    var secondsSpan = clock.querySelector('.seconds');
-  
-    function updateClock() {
-      var t = getTimeRemaining(endtime);
-  
-      daysSpan.innerHTML = t.days;
-      hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-      minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-      secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-  
-      if (t.total <= 0) {
-        clearInterval(timeinterval);
+      var t = Date.parse(endtime) - Date.parse(new Date());
+      console.log(t);
+      //algorithm Time
+      var seconds = Math.floor((t / 1000) % 60);
+      var minutes = Math.floor((t / 1000 / 60) % 60);
+      var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+      var days = Math.floor(t / (1000 * 60 * 60 * 24));
+      return {
+        'total': t,
+        'days': days,
+        'hours': hours,
+        'minutes': minutes,
+        'seconds': seconds
+      };
+    }
+    
+    function initializeClock(id, endtime) {
+      var clock = document.getElementById(id);
+      var daysSpan = clock.querySelector('.days');
+      var hoursSpan = clock.querySelector('.hours');
+      var minutesSpan = clock.querySelector('.minutes');
+      var secondsSpan = clock.querySelector('.seconds');
+    
+      function updateClock() {
+        var t = getTimeRemaining(endtime);
+    
+        daysSpan.innerHTML = t.days;
+        hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+        minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+        secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+    
+        if (t.total <= 0) {
+          clearInterval(timeinterval);
+        }
+        console.log(15);
       }
-      console.log(15);
-    }
-  
-    updateClock();
-    var timeinterval = setInterval(updateClock, 1000);
-  }
-  
-  /* var deadline="January 01 2022 00:00:00 GMT+0600"; //for Ukraine
-  var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000); // for endless timer */
-  const deadline = "2021-12-31";
-  initializeClock('countdown', deadline);
-
-
-
-
-window.addEventListener('DOMContentLoaded', function() {
-
-    // Tabs
     
-    /* let tabs = document.querySelectorAll('.gerg'),
-        tabsContent = document.querySelectorAll('.content'),
-        tabsParent = document.querySelector('.gerg');
-
-    function hideTabContent() {
-        
-        tabsContent.forEach(item => {
-            item.classList.add('hide');
-            item.classList.remove('show', 'fade');
-        });
-
-        tabs.forEach(item => {
-            item.classList.remove('contentSection');
-        });
-    }
-
-    function showTabContent(i = 0) {
-        tabsContent[i].classList.add('show', 'fade');
-        tabsContent[i].classList.remove('hide');
-        tabs[i].classList.add('contentSection');
+      updateClock();
+      var timeinterval = setInterval(updateClock, 1000);
     }
     
-    hideTabContent();
-    showTabContent();
-
-    tabsParent.addEventListener('click', function(event) {
-        const target = event.target;
-        if(target && target.classList.contains('gerg')) {
-            tabs.forEach((item, i) => {
-                if (target == item) {
-                    hideTabContent();
-                    showTabContent(i);
-                }
-            });
-        }
-    }); */
-
-
-    //Timer
-    //const deadline = "2021-12-31";
-
-    let getTimeRemaining = (endtime) => {
-        const t = Date.parse(endtime) - Date.parse(new Date()),
-                days = Math.floor( (t / (1000 * 60 * 60 * 24)) ),
-                hours = Math.floor( (t / (1000 * 60 * 60) % 24) ),
-                minutes = Math.floor( (t / 1000 / 60) % 60),
-                seconds = Math.floor( (t / 1000) % 60);
-
-        return {
-            "total": t,
-             "days": days,
-             "hours": hours,
-             "minutes": minutes,
-             "seconds": seconds 
-        };      
-    };
-
-    const  getZero = (num) =>  {
-        if(num >= 0 && num < 10) {
-            return `0${num}`;
-        }else
-        {
-            return num;
-        }
-    }
-
-    /* const setClock = (selector,  endtime) => {
-     const timer = document.querySelector(selector),
-             days = timer.querySelector("#days"),
-             hours = timer.querySelector("#hours"),
-             minutes = timer.querySelector("#minutes"),
-             seconds = timer.querySelector("#seconds"),
-             timeInterval = setInterval(updateClock, 1000);
-
-         updateClock();
-
-     function updateClock() {
-         const t = getTimeRemaining(endtime);
-
-         days.innerHTML = getZero(t.days);
-         hours.innerHTML = getZero(t.hours);
-         minutes.innerHTML = getZero(t.minutes); 
-         seconds.innerHTML = getZero(t.seconds);
-
-         if(t.total <= 0) {
-             clearInterval(timeInterval);
-         }
-     }
-    };
-
-
-    setClock(".timer", deadline); */
-
+    /* var deadline="January 01 2022 00:00:00 GMT+0600"; //for Ukraine
+    var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000); // for endless timer */
+    const deadline = "2022-01-31";
+    initializeClock('countdown', deadline);
 
     //Modal
     const modalTrigger = document. querySelectorAll('[data-modal]'),
@@ -202,6 +110,7 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
 
+//animaiton snow 
 $(document).ready(function() {
     $(".snow1").let_it_snow({
       speed: 0,

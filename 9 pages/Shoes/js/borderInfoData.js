@@ -27,27 +27,5 @@ window.addEventListener("DOMContentLoaded",() => {
 		});
 	}
 
-
-// 	datas.forEach((item, i) => {
-// 		item.addEventListener("click", () => {
-// 			const target = item.getAttribute("data-handle");
-// 
-// 		if(target === "coats") {
-// 
-// 			boxData.forEach((item,  i) => {
-// 				if(item.getAttribute("data-info") !== "coats") {
-// 					item.parentNode.removeChild(item);
-// 					item.style.display = "none";
-// 					item.style.setProperty("dispaly", "none", "important");
-// 					console.log(item);
-// 					box[0].style.display= "none";
-// 				}
-// 			});
-// 
-// 		}
-// 
-// 		});
-// 	});
-
 	showStyleA();
 });

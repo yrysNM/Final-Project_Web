@@ -1,0 +1,22 @@
+{
+  "name": "atelier-new-york",
+  "version": "1.0.0",
+  "description": "Final project is a team project. In one team can be 1-4 students. You can do final project with other practice class students, \t however you must have the same lecturer. Final project weights 40%. Requirements of final project are:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yrysNM/Final-Project_Web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yrysNM/Final-Project_Web/issues"
+  },
+  "homepage": "https://github.com/yrysNM/Final-Project_Web#readme",
+  "devDependencies": {
+    "json-server": "^0.17.0"
+  }
+}
